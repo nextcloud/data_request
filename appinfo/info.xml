@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<info xmlns:xsi= "http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="https://apps.nextcloud.com/schema/apps/info.xsd">
+    <id>data_request</id>
+    <name>Data Request</name>
+    <summary>Request your data from the admins</summary>
+    <description><![CDATA[Enable your users to request an export or deletion of their data. According options are added to the personal settings section. Administrations will be notified by email about the request.]]></description>
+    <version>1.0.0</version>
+    <licence>agpl</licence>
+    <author mail="blizzz@arthur-schiwon.de" homepage="https://nextcloud.com">Arthur Schiwon</author>
+    <namespace>DataRequest</namespace>
+    <category>tools</category>
+    <bugs>https://github.com/nextcloud/data_request/issues</bugs>
+    <dependencies>
+        <nextcloud min-version="13" max-version="13"/>
+    </dependencies>
+
+    <settings>
+        <personal>OCA\DataRequest\Settings\Personal</personal>
+    </settings>
+</info>
