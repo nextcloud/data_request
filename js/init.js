@@ -1,7 +1,4 @@
-<?php
 /**
- * @copyright Copyright (c) 2018 Arthur Schiwon <blizzz@arthur-schiwon.de>
- *
  * @author Arthur Schiwon <blizzz@arthur-schiwon.de>
  *
  * @license GNU AGPL version 3 or any later version
@@ -21,18 +18,8 @@
  *
  */
 
-style('data_request', 'style');
-script('data_request', ['init', 'app']);
+'use strict';
 
-
-?>
-
-<div id="data-request" class="section">
-	<h2><?php p($l->t('Personal data requests')); ?></h2>
-	<div>
-		<button id="data-request-export" data-request="export" class="button"><?php p($l->t('Request data export')); ?></button>
-	</div>
-	<div>
-		<button id="data-request-deletion" data-request="deletion" class="button"><?php p($l->t('Request account deletion')); ?></button>
-	</div>
-</div>
+$(document).ready(function() {
+	OCA.DataRequest.App.init();
+});

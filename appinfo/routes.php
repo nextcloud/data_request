@@ -21,18 +21,9 @@
  *
  */
 
-style('data_request', 'style');
-script('data_request', ['init', 'app']);
-
-
-?>
-
-<div id="data-request" class="section">
-	<h2><?php p($l->t('Personal data requests')); ?></h2>
-	<div>
-		<button id="data-request-export" data-request="export" class="button"><?php p($l->t('Request data export')); ?></button>
-	</div>
-	<div>
-		<button id="data-request-deletion" data-request="deletion" class="button"><?php p($l->t('Request account deletion')); ?></button>
-	</div>
-</div>
+return [
+	'ocs' => [
+		['name' => 'DataRequest#export', 'url' => '/api/v1/export', 'verb' => 'POST'],
+		['name' => 'DataRequest#deletion', 'url' => '/api/v1/deletion', 'verb' => 'POST'],
+	]
+];
