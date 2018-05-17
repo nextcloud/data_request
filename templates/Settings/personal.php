@@ -21,6 +21,16 @@
  *
  */
 
+style('data_request', 'style');
+
 ?>
 
-<div id="data-request"></div>
+<div id="data-request" class="section">
+	<h2><?php p($l->t('Personal data requests')); ?></h2>
+	<div>
+		<button id ="data-request-export" class="button"><?php p($l->t('Request data export')); ?></button>
+	</div>
+	<div>
+		<button id ="data-request-deletion" class="button"><?php p($l->t('Request account deletion')); ?></button>
+	</div>
+</div>
