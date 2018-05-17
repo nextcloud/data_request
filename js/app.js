@@ -43,14 +43,29 @@
 
 		_doRequest($context) {
 			$context.prop('disabled', 'disabled');
+			$context.addClass('loading');
+			$context.siblings('span.warning').addClass('hidden').html('');
+
 			$.ajax({
 				type: 'POST',
 				url: OC.linkToOCS('apps/data_request/api/v1', 2) + $context.data('request'),
+				dataType: 'json',
+				beforeSend: function (request) {
+					request.setRequestHeader('Accept', 'application/json');
+				},
+
 				success: function () {
 					$context.html($context.html() + ' ' + t('data_request', 'sent!'));
+					$context.removeClass('loading');
 				},
-				error: function () {
+				error: function (response) {
 					$context.prop('disabled', '');
+					$context.removeClass('loading');
+					if(response.responseJSON && response.responseJSON.ocs.data.error) {
+						$context.siblings('span.warning')
+							.removeClass('hidden')
+							.html(response.responseJSON.ocs.data.error);
+					}
 				}
 			});
 		}

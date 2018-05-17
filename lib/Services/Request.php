@@ -23,9 +23,11 @@
 
 namespace OCA\DataRequest\Services;
 
+use OCA\DataRequest\Exceptions\HintedRuntime;
 use OCP\Defaults;
 use OCP\IConfig;
 use OCP\IGroupManager;
+use OCP\IL10N;
 use OCP\IUser;
 use OCP\IUserSession;
 use OCP\L10N\IFactory;
@@ -46,13 +48,16 @@ class Request {
 	private $config;
 	/** @var IUser */
 	private $requester;
+	/** @var IL10N */
+	private $l;
 
-	public function __construct(IGroupManager $groupManager, IMailer $mailer, IFactory $l10nFactory, IConfig $config, IUserSession $userSession) {
+	public function __construct(IGroupManager $groupManager, IMailer $mailer, IFactory $l10nFactory, IConfig $config, IUserSession $userSession, IL10N $l) {
 		$this->groupManager = $groupManager;
 		$this->mailer = $mailer;
 		$this->l10nFactory = $l10nFactory;
 		$this->config = $config;
 		$this->requester = $userSession->getUser();
+		$this->l = $l;
 	}
 
 	public function sendExportRequest() {
@@ -74,7 +79,10 @@ class Request {
 			}
 		}
 		if(!$oneMailSent) {
-			throw new \RuntimeException('No mail was sent successfully');
+			throw new HintedRuntime(
+				'No mail was sent successfully',
+				$this->l->t('No administrator could have been contacted.')
+			);
 		}
 
 	}
@@ -143,7 +151,10 @@ class Request {
 			return $admin->getEMailAddress() !== null;
 		});
 		if(empty($admins)) {
-			throw new \RuntimeException('No admin has entered an email address');
+			throw new HintedRuntime(
+				'No admin has entered an email address',
+				$this->l->t('No administrator has set an email address')
+			);
 		}
 		return $admins;
 	}

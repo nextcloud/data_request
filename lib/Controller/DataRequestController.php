@@ -23,6 +23,7 @@
 
 namespace OCA\DataRequest\Controller;
 
+use OC\HintException;
 use OCA\DataRequest\Services\Request;
 use OCP\AppFramework\Http;
 use OCP\AppFramework\Http\DataResponse;
@@ -70,9 +71,9 @@ class DataRequestController extends OCSController {
 		try {
 			$this->dataRequest->sendDeleteRequest();
 			return new DataResponse();
-		} catch(\RuntimeException $e) {
+		} catch(HintException $e) {
 			return new DataResponse(
-				['error' => $e->getMessage()],
+				['error' => $e->getHint()],
 				Http::STATUS_INTERNAL_SERVER_ERROR
 			);
 		}
