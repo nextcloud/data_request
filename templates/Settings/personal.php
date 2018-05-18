@@ -28,11 +28,11 @@ script('data_request', ['init', 'app']);
 ?>
 
 <div id="data-request" class="section">
-	<h2><?php p($l->t('Personal data requests')); ?></h2>
+	<h2><?php p($l->t('Account')); ?></h2>
 	<div>
-		<button id="data-request-export" data-request="export" class="button"><?php p($l->t('Request data export')); ?></button>
+		<button id="data-request-export" data-request="export" class="button"><?php p($l->t('Request data export')); ?></button><span class="warning hidden"></span>
 	</div>
 	<div>
-		<button id="data-request-deletion" data-request="deletion" class="button"><?php p($l->t('Request account deletion')); ?></button>
+		<button id="data-request-deletion" data-request="deletion" class="button"><?php p($l->t('Request account deletion')); ?></button><span class="warning hidden"></span>
 	</div>
 </div>
