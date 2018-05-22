@@ -20,6 +20,8 @@
 
 'use strict';
 
+/** global: OCA */
+
 $(document).ready(function() {
 	OCA.DataRequest.App.init();
 });

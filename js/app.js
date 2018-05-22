@@ -20,7 +20,10 @@
 
 'use strict';
 
-(function(OCA) {
+/** global: OCA */
+/** global: OC */
+
+(function(OC, OCA) {
 	OCA.DataRequest = OCA.DataRequest || {};
 
 	OCA.DataRequest.App = {
@@ -70,4 +73,4 @@
 			});
 		}
 	};
-})(OCA);
+})(OC, OCA);
