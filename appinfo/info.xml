@@ -12,8 +12,8 @@
     <category>tools</category>
     <bugs>https://github.com/nextcloud/data_request/issues</bugs>
     <repository type="git">https://github.com/nextcloud/data_request.git</repository>
-    <screenshot>https://raw.githubusercontent.com/nextcloud/data_request/screenshots/personal-settings.png</screenshot>
-    <screenshot>https://raw.githubusercontent.com/nextcloud/data_request/screenshots/settings-close-up.png</screenshot>
+    <screenshot>https://raw.githubusercontent.com/nextcloud/data_request/master/screenshots/personal-settings.png</screenshot>
+    <screenshot>https://raw.githubusercontent.com/nextcloud/data_request/master/screenshots/settings-close-up.png</screenshot>
     <dependencies>
         <nextcloud min-version="13" max-version="13"/>
     </dependencies>
