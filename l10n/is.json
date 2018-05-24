@@ -1,0 +1,7 @@
+{ "translations": {
+    "sent!" : "sent!",
+    "Hello %s," : "Halló %s,",
+    "Data Request" : "Beiðni um gögn",
+    "Account" : "Notandaaðgangur"
+},"pluralForm" :"nplurals=2; plural=(n % 10 != 1 || n % 100 == 11);"
+}
