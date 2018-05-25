@@ -10,6 +10,8 @@ OC.L10N.register(
     "The user %s, identified by user id \"%s\", has requested to delete the account. Please take action accordingly." : "Der Benutzer %s, identifiziert durch die Benutzer-ID \"%s\", hat eine Löschung seines Kontos angefragt. Bitte handeln Sie entsprechend.",
     "No administrator has set an email address" : "Kein Administrator hat eine E-Mail-Adresse angegeben",
     "Data Request" : "Datenanfrage",
+    "Request your data from the admins" : "Daten vom Admin anfragen",
+    "Enable your users to request an export or deletion of their data. According options are added to the personal settings section. Administrations will be notified by email about the request." : "Ihren Nutzern erlauben einen Export oder die Löschung ihrer Daten zu beantragen. Passende Optionen werden in der persönlichen Seite der Nutzer angezeigt. Administratoren werden per Mail über die Anfrage benachrichtigt.",
     "Account" : "Konto",
     "You can request an export of your data or account deletion from the system administrator. This can take up to 30 days." : "Sie können einen Export Ihrer Daten oder die Konto-Löschung beim System-Administrator anfragen. Das kann bis zu 30 Tage dauern.",
     "Request data export" : "Daten-Export anfragen",
