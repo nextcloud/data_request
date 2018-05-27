@@ -1,0 +1,12 @@
+{ "translations": {
+    "sent!" : "¡unvióse!",
+    "No administrator could have been contacted." : "Nun pudo contautase con dengún alministrador.",
+    "Personal data export request" : "Solicitú d'esportación de datos personales",
+    "Hello %s," : "Hola %s,",
+    "The user %s, identified by user id \"%s\", has requested an export of his personal data. Please take action accordingly." : "L'usuariu %s, identificáu pola ID «%s», solicitó una esportación de los sos datos personales. Actúa en consecuencia, por favor.",
+    "Account deletion request" : "Solicitú de desaniciu de cuenta",
+    "The user %s, identified by user id \"%s\", has requested to delete the account. Please take action accordingly." : "L'usuariu %s, identificáu pola ID «%s», solicitó'l desaniciu de la so cuenta. Actúa en consecuencia, por favor.",
+    "No administrator has set an email address" : "Dengún alministrador afitó una direción de corréu",
+    "Data Request" : "Solicitú de datos"
+},"pluralForm" :"nplurals=2; plural=(n != 1);"
+}
