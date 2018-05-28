@@ -5,6 +5,7 @@ OC.L10N.register(
     "No administrator could have been contacted." : "Aucun administrateur n'a pu être contacté.",
     "Personal data export request" : "Demande d'export de données personnelles",
     "Hello %s," : "Bonjour %s,",
+    "The user %s, identified by user id \"%s\", has requested an export of his personal data. Please take action accordingly." : "L'utilisateur %s, portant l'identifiant \"%s\", a demandé un export de ses données personnelles. Merci de bien vouloir agir en conséquence.",
     "Account deletion request" : "Demande du suppression de compte",
     "No administrator has set an email address" : "Aucun administrateur n'a défini d'adresse E-mail",
     "Data Request" : "Demande de données",
