@@ -7,6 +7,7 @@ OC.L10N.register(
     "Hello %s," : "Bonjour %s,",
     "The user %s, identified by user id \"%s\", has requested an export of his personal data. Please take action accordingly." : "L'utilisateur %s, portant l'identifiant \"%s\", a demandé un export de ses données personnelles. Merci de bien vouloir agir en conséquence.",
     "Account deletion request" : "Demande du suppression de compte",
+    "The user %s, identified by user id \"%s\", has requested to delete the account. Please take action accordingly." : "L'utilisateur %s, portant l'identifiant \"%s\", a demandé la suppression de son compte. Merci de bien vouloir agir en conséquence.",
     "No administrator has set an email address" : "Aucun administrateur n'a défini d'adresse E-mail",
     "Data Request" : "Demande de données",
     "Request your data from the admins" : "Demander vos données aux administrateurs",
