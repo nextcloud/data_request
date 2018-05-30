@@ -96,8 +96,8 @@ class Request {
 
 	protected function craftEmailTo(IUser $admin, IEMailTemplate $template) {
 		$defaults = new Defaults();
-		$senderAddress = $this->requester->getEMailAddress() ?: Util::getDefaultEmailAddress('no-reply');
-		$senderName = $this->requester->getEMailAddress() ? $this->requester->getDisplayName() : $defaults->getName();
+		$senderAddress = Util::getDefaultEmailAddress('no-reply');
+		$senderName = $defaults->getName();
 
 		$message = $this->mailer->createMessage();
 		$message->setTo([$admin->getEMailAddress() => $admin->getDisplayName()]);
