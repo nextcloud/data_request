@@ -1,18 +1,20 @@
 OC.L10N.register(
     "data_request",
     {
-    "sent!" : "Gönderildi!",
+    "sent!" : "gönderildi!",
     "No administrator could have been contacted." : "Hiçbir yönetici ile iletişim kurulamadı.",
-    "Personal data export request" : "Kişisel veri çıkış talebi",
+    "Personal data export request" : "Kişisel verileri dışa aktarma isteği",
     "Hello %s," : "Merhaba %s,",
-    "The user %s, identified by user id \"%s\", has requested an export of his personal data. Please take action accordingly." : "\"%s\" Kullanıcı kimliği, %s ile tanımlanan kullanıcı, kişisel verilerini dışa aktarma talebinde bulundu. Lütfen buna göre harekete geçin.",
+    "The user %s, identified by user id \"%s\", has requested an export of his personal data. Please take action accordingly." : "%s kullanıcısı (\"%s\" kodlu), kişisel verilerini dışa aktarma isteğinde bulundu. Lütfen gerekli işlemleri yapın.",
     "Account deletion request" : "Hesap silme isteği",
-    "The user %s, identified by user id \"%s\", has requested to delete the account. Please take action accordingly." : "\"%s\" Kullanıcı kimliği, %s ile tanımlanan kullanıcı, hesabının silinmesine dair talepte bulundu. Lütfen buna göre harekete geçin.",
-    "No administrator has set an email address" : "Yönetici bir e-posta adresi belirlemedi",
-    "Data Request" : "Veri Talebi",
+    "The user %s, identified by user id \"%s\", has requested to delete the account. Please take action accordingly." : "%s kullanıcısı (%s kodlu), hesabının silinmesi isteğinde bulundu. Lütfen gerekli işlemleri yapın.",
+    "No administrator has set an email address" : "Hiç bir yönetici için e-posta adresi ayarlanmamış",
+    "Data Request" : "Veri İsteği",
+    "Request your data from the admins" : "Yöneticilerden verilerinizi istemenizi sağlar",
+    "Enable your users to request an export or deletion of their data. According options are added to the personal settings section. Administrations will be notified by email about the request." : "Kullanıcıların, kişisel ayarlar bölümünde belirtilen seçeneklere göre verilerinin dışa aktarılması ya da silinmesi isteğinde bulunmasını sağlar. Yapılan istek e-posta ile yöneticilere bildirilir.",
     "Account" : "Hesap",
-    "You can request an export of your data or account deletion from the system administrator. This can take up to 30 days." : "Verilerinizin çıkış talebini veya hesap silme işlemini sistem yöneticisinden vermeniz talep edebilirsiniz. Bu, 30 güne kadar sürebilir.",
-    "Request data export" : "Veriyi dışa aktarma talebi",
-    "Request account deletion" : "Hesap silme isteği"
+    "You can request an export of your data or account deletion from the system administrator. This can take up to 30 days." : "Sistem yöneticisinden verilerinizin dışa aktarılmasını ya da hesabınızın silinmesini sistem isteyebilirsiniz. Bu işlemin tamamlanması 30 güne kadar zaman alabilir.",
+    "Request data export" : "Verilerin dışa aktarılmasını isteyin",
+    "Request account deletion" : "Hesabınızın silinmesini isteyin"
 },
 "nplurals=2; plural=(n > 1);");
