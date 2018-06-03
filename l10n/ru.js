@@ -10,6 +10,7 @@ OC.L10N.register(
     "The user %s, identified by user id \"%s\", has requested to delete the account. Please take action accordingly." : "Пользователь %s, идентифицированный по идентификатору пользователя \"%s\", запросил удаление учетной записи. Пожалуйста, примите соответствующие меры.",
     "No administrator has set an email address" : "Ни один администратор не установил адрес электронной почты",
     "Data Request" : "Запрос данных",
+    "Request your data from the admins" : "Запросить Ваши данные у администраторов",
     "Account" : "Аккаунт",
     "You can request an export of your data or account deletion from the system administrator. This can take up to 30 days." : "Вы можете запросить у системного администратора экспорт ваших данных или удаление учетной записи. Это может занять до 30 дней.",
     "Request data export" : "Запрос экспорта данных",
