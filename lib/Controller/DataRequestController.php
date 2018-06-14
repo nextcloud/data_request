@@ -52,15 +52,9 @@ class DataRequestController extends OCSController {
 	 * @PasswordConfirmationRequired
 	 */
 	public function export() {
-		try {
+		return $this->processRequest(function() {
 			$this->dataRequest->sendExportRequest();
-			return new DataResponse();
-		} catch(HintedRuntime $e) {
-			return new DataResponse(
-				['error' => $e->getHint()],
-				Http::STATUS_INTERNAL_SERVER_ERROR
-			);
-		}
+		});
 	}
 
 	/**
@@ -68,8 +62,14 @@ class DataRequestController extends OCSController {
 	 * @PasswordConfirmationRequired
 	 */
 	public function deletion() {
-		try {
+		return $this->processRequest(function() {
 			$this->dataRequest->sendDeleteRequest();
+		});
+	}
+
+	protected function processRequest(callable $serviceMethod) {
+		try {
+			$serviceMethod();
 			return new DataResponse();
 		} catch(HintedRuntime $e) {
 			return new DataResponse(

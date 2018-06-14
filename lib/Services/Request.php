@@ -50,14 +50,25 @@ class Request {
 	private $requester;
 	/** @var IL10N */
 	private $l;
+	/** @var Defaults */
+	private $defaults;
 
-	public function __construct(IGroupManager $groupManager, IMailer $mailer, IFactory $l10nFactory, IConfig $config, IUserSession $userSession, IL10N $l) {
+	public function __construct(
+		IGroupManager $groupManager,
+		IMailer $mailer,
+		IFactory $l10nFactory,
+		IConfig $config,
+		IUserSession $userSession,
+		IL10N $l,
+		Defaults $defaults
+	) {
 		$this->groupManager = $groupManager;
 		$this->mailer = $mailer;
 		$this->l10nFactory = $l10nFactory;
 		$this->config = $config;
 		$this->requester = $userSession->getUser();
 		$this->l = $l;
+		$this->defaults = $defaults;
 	}
 
 	public function sendExportRequest() {
@@ -95,12 +106,11 @@ class Request {
 	}
 
 	protected function craftEmailTo(IUser $admin, IEMailTemplate $template) {
-		$defaults = new Defaults();
 		$senderAddress = Util::getDefaultEmailAddress('no-reply');
-		$senderName = $defaults->getName();
+		$senderName = $this->defaults->getName();
 
 		$message = $this->mailer->createMessage();
-		$message->setTo([$admin->getEMailAddress() => $admin->getDisplayName()]);
+		$message->setTo([$admin->getEMailAddress () => $admin->getDisplayName()]);
 		$message->setSubject($template->renderSubject());
 		$message->setHtmlBody($template->renderHtml());
 		$message->setPlainBody($template->renderText());
