@@ -117,9 +117,12 @@ class Request {
 		$message->setFrom([$senderAddress => $senderName]);
 
 		try {
-			$this->mailer->send($message);
+			$failedRecipients = $this->mailer->send($message);
+			if(count($failedRecipients) > 0) {
+				return false;
+			}
 		} catch (\Exception $e) {
-			return $e;
+			return false;
 		}
 
 		return true;

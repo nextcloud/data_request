@@ -212,7 +212,27 @@ class RequestTest extends \Test\TestCase {
 		$this->assertSame($adminsWithEmail, count($result));
 	}
 
-	public function testSendMail() {
+	public function mailerSendProvider() {
+		return [
+			[
+				false, [], true
+			],
+			[
+				false, ['elu-thingol@sindar.gov'], false
+			],
+			[
+				true, [], false
+			]
+		];
+	}
+
+	/**
+	 * @dataProvider mailerSendProvider
+	 * @param $sendThrowsException
+	 * @param $sendResult
+	 * @param $expectedResult
+	 */
+	public function testSendMail($sendThrowsException, $sendResult, $expectedResult) {
 		$adminName = 'Elu Thingol';
 		$adminMail = 'elu-thingol@sindar.gov';
 		$admin = $this->createMock(IUser::class);
@@ -247,15 +267,21 @@ class RequestTest extends \Test\TestCase {
 		$this->mailer->expects($this->once())
 			->method('createMessage')
 			->willReturn($message);
-		$this->mailer->expects($this->once())
+
+		$sendMocker = $this->mailer->expects($this->once())
 			->method('send')
 			->with($message);
+		if($sendThrowsException) {
+			$sendMocker->willThrowException(new \Exception('Expected Exception'));
+		} else {
+			$sendMocker->willReturn($sendResult);
+		}
 
 		$this->defaults->expects($this->atLeastOnce())
 			->method('getName')
 			->willReturn('Cloud of Sindar');
 
 		$result = $this->invokePrivate($this->service, 'craftEmailTo', [$admin, $template]);
-		$this->assertTrue($result);
+		$this->assertSame($expectedResult, $result);
 	}
 }
