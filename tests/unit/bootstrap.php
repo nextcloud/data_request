@@ -25,7 +25,4 @@ if (!defined('PHPUNIT_RUN')) {
 require_once __DIR__.'/../../../../lib/base.php';
 \OC::$loader->addValidRoot(\OC::$SERVERROOT . '/tests');
 \OC_App::loadApp('data_request');
-if(!class_exists('PHPUnit_Framework_TestCase')) {
-	require_once('PHPUnit/Autoload.php');
-}
 OC_Hook::clear();

@@ -163,14 +163,23 @@ class RequestTest extends \Test\TestCase {
 
 	public function adminProvider() {
 		$admin1 = $this->createMock(IUser::class);
+
 		$admin2 = $this->createMock(IUser::class);
 		$admin2->expects($this->any())
 			->method('getEMailAddress')
 			->willReturn('admin2@sindar.gov');
+
 		$admin3 = $this->createMock(IUser::class);
 		$admin3->expects($this->any())
 			->method('getEMailAddress')
 			->willReturn('admin3@sindar.gov');
+
+		$admin4 = $this->createMock(IUser::class);
+
+		$admin5 = $this->createMock(IUser::class);
+		$admin5->expects($this->any())
+			->method('getEMailAddress')
+			->willReturn('admin5@sindar.gov');
 
 		return [
 			[
@@ -182,7 +191,7 @@ class RequestTest extends \Test\TestCase {
 				1
 			],
 			[
-				[ $admin1, $admin2, $admin3 ],
+				[ $admin3, $admin4, $admin5 ], // for whatever reasons, reusing $admin1 and $admin2 would fail on CI
 				2
 			]
 		];
@@ -209,6 +218,7 @@ class RequestTest extends \Test\TestCase {
 			$this->expectException(HintedRuntime::class);
 		}
 		$result = $this->invokePrivate($this->service, 'getAdmins');
+
 		$this->assertSame($adminsWithEmail, count($result));
 	}
 

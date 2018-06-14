@@ -160,7 +160,7 @@ class Request {
 
 	protected function getAdmins() {
 		$admins = $this->groupManager->get('admin')->searchUsers('');
-		$admins =  array_filter($admins, function(IUser $admin) {
+		$admins = array_filter($admins, function(IUser $admin) {
 			return $admin->getEMailAddress() !== null;
 		});
 		if(empty($admins)) {
