@@ -19,6 +19,59 @@ pipeline:
     when:
       matrix:
         TESTS: signed-off-check
+  check-app-compatbility:
+    image: nextcloudci/php7.0:php7.0-2
+    environment:
+      - APP_NAME=data_request
+      - CORE_BRANCH=stable13
+      - DB=sqlite
+    commands:
+          # Pre-setup steps
+          - wget https://raw.githubusercontent.com/nextcloud/travis_ci/master/before_install.sh
+          - bash ./before_install.sh $APP_NAME $CORE_BRANCH $DB
+          - cd ../server
+
+          # Code checker
+          - ./occ app:check-code $APP_NAME
+          - cd apps/$APP_NAME/
+        when:
+          matrix:
+            TESTS: check-app-compatbility
+  syntax-php5.6:
+      image: nextcloudci/php5.6:php5.6-3
+      environment:
+        - APP_NAME=spreed
+        - CORE_BRANCH=stable13
+        - DB=sqlite
+      commands:
+        # Pre-setup steps
+        - wget https://raw.githubusercontent.com/nextcloud/travis_ci/master/before_install.sh
+        - bash ./before_install.sh $APP_NAME $CORE_BRANCH $DB
+        - cd ../server
+        - composer install
+        - ./lib/composer/bin/parallel-lint apps/$APP_NAME/
+      when:
+        matrix:
+          TESTS: syntax-php5.6
+  syntax-php7.0:
+    image: nextcloudci/php7.0:php7.0-2
+    environment:
+      - APP_NAME=spreed
+      - CORE_BRANCH=stable13
+      - DB=sqlite
+    commands:
+      # Pre-setup steps
+      - wget https://raw.githubusercontent.com/nextcloud/travis_ci/master/before_install.sh
+      - bash ./before_install.sh $APP_NAME $CORE_BRANCH $DB
+      - cd ../server
+      - composer install
+      - ./lib/composer/bin/parallel-lint apps/$APP_NAME/
+    when:
+      matrix:
+        TESTS: syntax-php7.0
 matrix:
   include:
     - TESTS: signed-off-check
+    - TESTS: check-app-compatbility
+    - TESTS: syntax-php5.6
+    - TESTS: syntax-php7.0
