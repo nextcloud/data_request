@@ -7,6 +7,7 @@ OC.L10N.register(
     "Hello %s," : "Zdravíme %s,",
     "The user %s, identified by user id \"%s\", has requested an export of his personal data. Please take action accordingly." : "Uživatel %s, identifikovaný uživatelským identifikátorem „%s“, si vyžádal export svých osobních dat. Příslušně zareagujte.",
     "Account deletion request" : "Požadavek na smazání účtu",
+    "The user %s, identified by user id \"%s\", has requested to delete the account. Please take action accordingly." : "Uživatel %s, identifikovaný uživatelským Id %s, požádal o smazání účtu. Proveďte příslušné akce.",
     "No administrator has set an email address" : "Žádný ze správců nemá zadanou e-mailovou adresu",
     "Data Request" : "Požadavek na data",
     "Request your data from the admins" : "Vyžádat si svá data od správců",
