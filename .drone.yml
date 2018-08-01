@@ -22,7 +22,7 @@ pipeline:
     image: nextcloudci/php7.0:php7.0-2
     environment:
       - APP_NAME=data_request
-      - CORE_BRANCH=stable13
+      - CORE_BRANCH=master
       - DB=sqlite
     commands:
         # Pre-setup steps
@@ -36,27 +36,11 @@ pipeline:
     when:
       matrix:
         TESTS: check-app-compatbility
-  syntax-php5.6:
-    image: nextcloudci/php5.6:php5.6-8
-    environment:
-      - APP_NAME=data_request
-      - CORE_BRANCH=stable13
-      - DB=sqlite
-    commands:
-      # Pre-setup steps
-      - wget https://raw.githubusercontent.com/nextcloud/travis_ci/master/before_install.sh
-      - bash ./before_install.sh $APP_NAME $CORE_BRANCH $DB
-      - cd ../server
-      - composer install
-      - ./lib/composer/bin/parallel-lint apps/$APP_NAME/
-    when:
-      matrix:
-        TESTS: syntax-php5.6
   syntax-php7.0:
     image: nextcloudci/php7.0:php7.0-2
     environment:
       - APP_NAME=data_request
-      - CORE_BRANCH=stable13
+      - CORE_BRANCH=master
       - DB=sqlite
     commands:
       # Pre-setup steps
@@ -68,33 +52,11 @@ pipeline:
     when:
       matrix:
         TESTS: syntax-php7.0
-  php5.6:
-    image: nextcloudci/php5.6:php5.6-8
-    environment:
-      - APP_NAME=data_request
-      - CORE_BRANCH=stable13
-      - DB=sqlite
-    commands:
-      - apt update && apt-get -y install php5-xdebug
-
-      # Pre-setup steps
-      - wget https://raw.githubusercontent.com/nextcloud/travis_ci/master/before_install.sh
-      - bash ./before_install.sh $APP_NAME $CORE_BRANCH $DB
-      - cd ../server/
-      - ./occ app:enable $APP_NAME
-      - cd apps/$APP_NAME
-
-      # Run phpunit tests
-      - cd tests/unit/
-      - phpunit --configuration phpunit.xml
-    when:
-      matrix:
-        TESTS: php5.6
   php7.0:
     image: nextcloudci/php7.0:php7.0-2
     environment:
       - APP_NAME=data_request
-      - CORE_BRANCH=stable13
+      - CORE_BRANCH=master
       - DB=sqlite
     commands:
       # Pre-setup steps
@@ -114,7 +76,7 @@ pipeline:
     image: nextcloudci/php7.1:php7.1-15
     environment:
       - APP_NAME=data_request
-      - CORE_BRANCH=stable13
+      - CORE_BRANCH=master
       - DB=sqlite
     commands:
       # Pre-setup steps
@@ -130,13 +92,32 @@ pipeline:
     when:
       matrix:
         TESTS: php7.1
+  php7.2:
+    image: nextcloudci/php7.2:php7.2-12
+    environment:
+    - APP_NAME=data_request
+    - CORE_BRANCH=master
+    - DB=sqlite
+    commands:
+    # Pre-setup steps
+    - wget https://raw.githubusercontent.com/nextcloud/travis_ci/master/before_install.sh
+    - bash ./before_install.sh $APP_NAME $CORE_BRANCH $DB
+    - cd ../server/
+    - ./occ app:enable $APP_NAME
+    - cd apps/$APP_NAME
+
+    # Run phpunit tests
+    - cd tests/unit/
+    - phpunit --configuration phpunit.xml
+    when:
+      matrix:
+        TESTS: php7.2
 
 matrix:
   include:
     - TESTS: signed-off-check
     - TESTS: check-app-compatbility
-    - TESTS: syntax-php5.6
     - TESTS: syntax-php7.0
-    - TESTS: php5.6
     - TESTS: php7.0
     - TESTS: php7.1
+    - TESTS: php7.2
