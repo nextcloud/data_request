@@ -38,10 +38,10 @@ class DataRequestController extends OCSController {
 	public function __construct(
 		$appName,
 		IRequest $request,
+		Request $dataRequest,
 		$corsMethods = 'PUT, POST, GET, DELETE, PATCH',
 		$corsAllowedHeaders = 'Authorization, Content-Type, Accept',
-		$corsMaxAge = 1728000,
-		Request $dataRequest
+		$corsMaxAge = 1728000
 	) {
 		parent::__construct($appName, $request, $corsMethods, $corsAllowedHeaders, $corsMaxAge);
 		$this->dataRequest = $dataRequest;
