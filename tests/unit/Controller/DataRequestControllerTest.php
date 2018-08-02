@@ -48,10 +48,10 @@ class DataRequestControllerTest extends \Test\TestCase {
 		$this->controller = new DataRequestController(
 			'data_request',
 			$request,
+			$this->requestService,
 			'PUT, POST, GET, DELETE, PATCH',
 			'Authorization, Content-Type, Accept',
-			1728000,
-			$this->requestService
+			1728000
 		);
 	}
 
