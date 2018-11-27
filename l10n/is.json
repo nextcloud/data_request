@@ -9,6 +9,7 @@
     "No administrator has set an email address" : "Enginn kerfisstjóri hefur stillt tölvupóstfang",
     "Data Request" : "Beiðni um gögn",
     "Request your data from the admins" : "Biddu stjórnendur um gögnin þín",
+    "Enable your users to request an export or deletion of their data. According options are added to the personal settings section. Administrations will be notified by email about the request." : "Gerir notendum þínum kleift að biðja um útflutning eða eyðingu gagnanna sinna. Viðeigandi valkostir birtast þá í einkastillingunum þeirra. Stjórnendur fá tilkynningar í tölvupósti um slíkar beiðnir.",
     "Account" : "Notandaaðgangur",
     "You can request an export of your data or account deletion from the system administrator. This can take up to 30 days." : "Þú getur beðið um útflutning á gögnunum þínum eða eyðingu notandaaðgangsins þíns frá kerfisstjóra. Þetta getur tekið allt að 30 dögum.",
     "Request data export" : "Biðja um útflutning gagna",
