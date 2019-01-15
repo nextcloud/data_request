@@ -4,7 +4,7 @@ OC.L10N.register(
     "sent!" : "发送！",
     "No administrator could have been contacted." : "没有可联系的管理员。",
     "Personal data export request" : "个人数据导出请求",
-    "Hello %s," : "%s 你好，",
+    "Hello %s," : "您好，%s，",
     "The user %s, identified by user id \"%s\", has requested an export of his personal data. Please take action accordingly." : "由用户ID“%s”标识的用户%s请求导出其个人数据。 请采取相应措施。",
     "Account deletion request" : "账户删除请求",
     "The user %s, identified by user id \"%s\", has requested to delete the account. Please take action accordingly." : "由用户ID“%s”标识的用户%s请求删除其账户。 请采取相应措施。",
