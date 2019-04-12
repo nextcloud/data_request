@@ -1,124 +1,138 @@
-clone:
-  git:
-    image: plugins/git
-    depth: 1
+kind: pipeline
+name: compatibility
 
-pipeline:
-  signed-off-check:
+steps:
+  - name: syntax-php7.1
     image: nextcloudci/php7.1:php7.1-16
     environment:
-      - APP_NAME=data_request
-      - CORE_BRANCH=master
-      - DB=sqlite
+      APP_NAME: data_request
+      CORE_BRANCH: master
+      DATABASEHOST: sqlite
     commands:
       - wget https://raw.githubusercontent.com/nextcloud/travis_ci/master/before_install.sh
-      - bash ./before_install.sh $APP_NAME $CORE_BRANCH $DB
-      - cd ../server
-      - php ./build/signed-off-checker.php
-    secrets: [ github_token ]
-    when:
-      matrix:
-        TESTS: signed-off-check
-  check-app-compatbility:
-    image: nextcloudci/php7.1:php7.1-16
-    environment:
-      - APP_NAME=data_request
-      - CORE_BRANCH=master
-      - DB=sqlite
-    commands:
-        # Pre-setup steps
-        - wget https://raw.githubusercontent.com/nextcloud/travis_ci/master/before_install.sh
-        - bash ./before_install.sh $APP_NAME $CORE_BRANCH $DB
-        - cd ../server
-
-        # Code checker
-        - ./occ app:check-code $APP_NAME
-        - cd apps/$APP_NAME/
-    when:
-      matrix:
-        TESTS: check-app-compatbility
-  syntax-php7.1:
-    image: nextcloudci/php7.1:php7.1-16
-    environment:
-      - APP_NAME=data_request
-      - CORE_BRANCH=master
-      - DB=sqlite
-    commands:
-      # Pre-setup steps
-      - wget https://raw.githubusercontent.com/nextcloud/travis_ci/master/before_install.sh
-      - bash ./before_install.sh $APP_NAME $CORE_BRANCH $DB
+      - bash ./before_install.sh $APP_NAME $CORE_BRANCH $DATABASEHOST
       - cd ../server
       - composer install
       - ./lib/composer/bin/parallel-lint apps/$APP_NAME/
-    when:
-      matrix:
-        TESTS: syntax-php7.1
-  php7.1:
-    image: nextcloudci/php7.1:php7.1-16
-    environment:
-      - APP_NAME=data_request
-      - CORE_BRANCH=master
-      - DB=sqlite
-    commands:
-      # Pre-setup steps
-      - wget https://raw.githubusercontent.com/nextcloud/travis_ci/master/before_install.sh
-      - bash ./before_install.sh $APP_NAME $CORE_BRANCH $DB
-      - cd ../server/
-      - ./occ app:enable $APP_NAME
-      - cd apps/$APP_NAME
-
-      # Run phpunit tests
-      - cd tests/unit/
-      - phpunit --configuration phpunit.xml
-    when:
-      matrix:
-        TESTS: php7.1
-  php7.2:
-    image: nextcloudci/php7.2:php7.2-12
-    environment:
-    - APP_NAME=data_request
-    - CORE_BRANCH=master
-    - DB=sqlite
-    commands:
-    # Pre-setup steps
-    - wget https://raw.githubusercontent.com/nextcloud/travis_ci/master/before_install.sh
-    - bash ./before_install.sh $APP_NAME $CORE_BRANCH $DB
-    - cd ../server/
-    - ./occ app:enable $APP_NAME
-    - cd apps/$APP_NAME
-
-    # Run phpunit tests
-    - cd tests/unit/
-    - phpunit --configuration phpunit.xml
-    when:
-      matrix:
-        TESTS: php7.2
-  php7.3:
+  - name: syntax-php7.3
     image: nextcloudci/php7.3:php7.3-1
     environment:
-      - APP_NAME=data_request
-      - CORE_BRANCH=master
-      - DB=sqlite
+      APP_NAME: data_request
+      CORE_BRANCH: master
+      DATABASEHOST: sqlite
     commands:
-      # Pre-setup steps
       - wget https://raw.githubusercontent.com/nextcloud/travis_ci/master/before_install.sh
-      - bash ./before_install.sh $APP_NAME $CORE_BRANCH $DB
-      - cd ../server/
+      - bash ./before_install.sh $APP_NAME $CORE_BRANCH $DATABASEHOST
+      - cd ../server
+      - composer install
+      - ./lib/composer/bin/parallel-lint apps/$APP_NAME/
+  - name: app-code-check
+    image: nextcloudci/php7.3:php7.3-1
+    environment:
+      APP_NAME: data_request
+      CORE_BRANCH: master
+      DATABASEHOST: sqlite
+    commands:
+      - wget https://raw.githubusercontent.com/nextcloud/travis_ci/master/before_install.sh
+      - bash ./before_install.sh $APP_NAME $CORE_BRANCH $DATABASEHOST
+      - cd ../server
+      - ./occ app:check-code $APP_NAME
+      - cd apps/$APP_NAME/
+
+trigger:
+  branch:
+    - master
+    - stable*
+  event:
+    - pull_request
+    - push
+
+---
+kind: pipeline
+name: unit-sqlite-php7.1
+
+steps:
+  - name: sqlite-php7.1
+    image: nextcloudci/php7.1:php7.1-16
+    environment:
+      APP_NAME: data_request
+      CORE_BRANCH: master
+      DATABASEHOST: sqlite
+    commands:
+      - wget https://raw.githubusercontent.com/nextcloud/travis_ci/master/before_install.sh
+      - bash ./before_install.sh $APP_NAME $CORE_BRANCH $DATABASEHOST
+      - cd ../server
       - ./occ app:enable $APP_NAME
       - cd apps/$APP_NAME
 
       # Run phpunit tests
       - cd tests/unit/
       - phpunit --configuration phpunit.xml
-    when:
-      matrix:
-        TESTS: php7.3
 
-matrix:
-  include:
-    - TESTS: signed-off-check
-    - TESTS: check-app-compatbility
-    - TESTS: syntax-php7.1
-    - TESTS: php7.1
-    - TESTS: php7.2
-    - TESTS: php7.3
+trigger:
+  branch:
+    - master
+    - stable*
+  event:
+    - pull_request
+    - push
+
+---
+kind: pipeline
+name: unit-sqlite-php7.2
+
+steps:
+  - name: sqlite-php7.2
+    image: nextcloudci/php7.2:php7.2-12
+    environment:
+      APP_NAME: data_request
+      CORE_BRANCH: master
+      DATABASEHOST: sqlite
+    commands:
+      - wget https://raw.githubusercontent.com/nextcloud/travis_ci/master/before_install.sh
+      - bash ./before_install.sh $APP_NAME $CORE_BRANCH $DATABASEHOST
+      - cd ../server
+      - ./occ app:enable $APP_NAME
+      - cd apps/$APP_NAME
+
+      # Run phpunit tests
+      - cd tests/unit/
+      - phpunit --configuration phpunit.xml
+
+trigger:
+  branch:
+    - master
+    - stable*
+  event:
+    - pull_request
+    - push
+
+---
+kind: pipeline
+name: unit-sqlite-php7.3
+
+steps:
+  - name: sqlite-php7.3
+    image: nextcloudci/php7.3:php7.3-1
+    environment:
+      APP_NAME: data_request
+      CORE_BRANCH: master
+      DATABASEHOST: sqlite
+    commands:
+      - wget https://raw.githubusercontent.com/nextcloud/travis_ci/master/before_install.sh
+      - bash ./before_install.sh $APP_NAME $CORE_BRANCH $DATABASEHOST
+      - cd ../server
+      - ./occ app:enable $APP_NAME
+      - cd apps/$APP_NAME
+
+      # Run phpunit tests
+      - cd tests/unit/
+      - phpunit --configuration phpunit.xml
+
+trigger:
+  branch:
+    - master
+    - stable*
+  event:
+    - pull_request
+    - push
