@@ -16,8 +16,7 @@ steps:
 
         # Code checker
         - ./occ app:check-code $APP_NAME
-        - cd apps/$APP_NAME/
--compatbility
+
 trigger:
   branch:
     - master
