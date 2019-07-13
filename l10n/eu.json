@@ -1,0 +1,6 @@
+{ "translations": {
+    "sent!" : "bidalita!",
+    "Hello %s," : "Kaixo %s,",
+    "Account" : "Kontua"
+},"pluralForm" :"nplurals=2; plural=(n != 1);"
+}
