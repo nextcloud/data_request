@@ -9,10 +9,10 @@
     "No administrator has set an email address" : "이메일 주소를 설정한 관리자 없음",
     "Data Request" : "데이터 요청",
     "Request your data from the admins" : "관리자에게 내 데이터 요청",
-    "Enable your users to request an export or deletion of their data. According options are added to the personal settings section. Administrations will be notified by email about the request." : "사용자 데이터 내보내기나 사용자 데이터 삭제 요청을 허용합니다. 개인 설정 부분에 해당하는 옵션이 추가됩니다. 관리자에게 이메일로 해당 요청을 알립니다.",
     "Account" : "계정",
     "You can request an export of your data or account deletion from the system administrator. This can take up to 30 days." : "시스템 관리자에게 데이터 복사본이나 계정 삭제를 요청할 수 있습니다. 최대 30일이 소요될 수 있습니다.",
     "Request data export" : "데이터 내보내기 요청",
-    "Request account deletion" : "계정 삭제 요청"
+    "Request account deletion" : "계정 삭제 요청",
+    "Enable your users to request an export or deletion of their data. According options are added to the personal settings section. Administrations will be notified by email about the request." : "사용자 데이터 내보내기나 사용자 데이터 삭제 요청을 허용합니다. 개인 설정 부분에 해당하는 옵션이 추가됩니다. 관리자에게 이메일로 해당 요청을 알립니다."
 },"pluralForm" :"nplurals=1; plural=0;"
 }
