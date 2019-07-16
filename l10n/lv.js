@@ -11,10 +11,10 @@ OC.L10N.register(
     "No administrator has set an email address" : "Neviens administrators nav norādijis e-pasta adresi",
     "Data Request" : "Datu Pieprasījums",
     "Request your data from the admins" : "Pieprasi savus datus no administrātoriem",
-    "Enable your users to request an export or deletion of their data. According options are added to the personal settings section. Administrations will be notified by email about the request." : "Ļauj saviem lietotājiem pieprasīt savu datu eksportu vai dzēšanu. Balstoties uz iespējām, kas pievienotas personas iestatījumos. Administrātoriem pieprasījums tiks paziņots caur e-pastu. ",
     "Account" : "Konts",
     "You can request an export of your data or account deletion from the system administrator. This can take up to 30 days." : "Tu vari pieprasīt savu datu eksportu vai konta dzēšanu no sistēmas administrātora. Tas var aizņemt līdz pat 30 dienām.",
     "Request data export" : "Pieprasīt datu eksportu",
-    "Request account deletion" : "Pieprasīt konta dzēšanu"
+    "Request account deletion" : "Pieprasīt konta dzēšanu",
+    "Enable your users to request an export or deletion of their data. According options are added to the personal settings section. Administrations will be notified by email about the request." : "Ļauj saviem lietotājiem pieprasīt savu datu eksportu vai dzēšanu. Balstoties uz iespējām, kas pievienotas personas iestatījumos. Administrātoriem pieprasījums tiks paziņots caur e-pastu. "
 },
 "nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : 2);");
