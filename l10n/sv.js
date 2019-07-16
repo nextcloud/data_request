@@ -11,10 +11,10 @@ OC.L10N.register(
     "No administrator has set an email address" : "Ingen administratör ha angett någon e-postadress",
     "Data Request" : "Databegäran",
     "Request your data from the admins" : "Begär din data från administratören",
-    "Enable your users to request an export or deletion of their data. According options are added to the personal settings section. Administrations will be notified by email about the request." : "Tillåt användare att begära export av sin data eller radering av sitt konto. Dessa alternativ kommer att läggas till i användarens personliga inställningar. Administratörer kommer att meddelas via e-post vid användares begäran.",
     "Account" : "Konto",
     "You can request an export of your data or account deletion from the system administrator. This can take up to 30 days." : "Du kan begära export av din data eller radering av ditt konto från systemadministratören. Detta kan ta upp till 30 dagar.",
     "Request data export" : "Begär export av data",
-    "Request account deletion" : "Begär att radera ditt konto"
+    "Request account deletion" : "Begär att radera ditt konto",
+    "Enable your users to request an export or deletion of their data. According options are added to the personal settings section. Administrations will be notified by email about the request." : "Tillåt användare att begära export av sin data eller radering av sitt konto. Dessa alternativ kommer att läggas till i användarens personliga inställningar. Administratörer kommer att meddelas via e-post vid användares begäran."
 },
 "nplurals=2; plural=(n != 1);");

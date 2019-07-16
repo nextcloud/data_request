@@ -11,10 +11,10 @@ OC.L10N.register(
     "No administrator has set an email address" : "No administrator has set an email address",
     "Data Request" : "Data Request",
     "Request your data from the admins" : "Request your data from the admins",
-    "Enable your users to request an export or deletion of their data. According options are added to the personal settings section. Administrations will be notified by email about the request." : "Enable your users to request an export or deletion of their data. According options are added to the personal settings section. Administrations will be notified by email about the request.",
     "Account" : "Account",
     "You can request an export of your data or account deletion from the system administrator. This can take up to 30 days." : "You can request an export of your data or account deletion from the system administrator. This can take up to 30 days.",
     "Request data export" : "Request data export",
-    "Request account deletion" : "Request account deletion"
+    "Request account deletion" : "Request account deletion",
+    "Enable your users to request an export or deletion of their data. According options are added to the personal settings section. Administrations will be notified by email about the request." : "Enable your users to request an export or deletion of their data. According options are added to the personal settings section. Administrations will be notified by email about the request."
 },
 "nplurals=2; plural=(n != 1);");

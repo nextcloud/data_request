@@ -11,10 +11,10 @@ OC.L10N.register(
     "No administrator has set an email address" : "Neniu administranto havas retpoŝtadreson.",
     "Data Request" : "Peto pri datumoj",
     "Request your data from the admins" : "Peti viajn datumojn el via administranto",
-    "Enable your users to request an export or deletion of their data. According options are added to the personal settings section. Administrations will be notified by email about the request." : "Permesas al viaj uzantoj peti eksporton aŭ forigadon de iliaj datumoj. Laŭaj opcioj aldoniĝos al iliaj agordoj. Administrantoj sciiĝos per retpoŝtmesaĝo pri la peto.",
     "Account" : "Konto",
     "You can request an export of your data or account deletion from the system administrator. This can take up to 30 days." : "Vi povas peti eksporton de viaj datumoj aŭ forigadon de via konto el la sistema administranto. Tio povas daŭri ĝis 30 tagoj.",
     "Request data export" : "Peti datumeksporton",
-    "Request account deletion" : "Peti kontoforigadon"
+    "Request account deletion" : "Peti kontoforigadon",
+    "Enable your users to request an export or deletion of their data. According options are added to the personal settings section. Administrations will be notified by email about the request." : "Permesas al viaj uzantoj peti eksporton aŭ forigadon de iliaj datumoj. Laŭaj opcioj aldoniĝos al iliaj agordoj. Administrantoj sciiĝos per retpoŝtmesaĝo pri la peto."
 },
 "nplurals=2; plural=(n != 1);");

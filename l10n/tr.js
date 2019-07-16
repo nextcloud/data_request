@@ -11,10 +11,10 @@ OC.L10N.register(
     "No administrator has set an email address" : "Hiç bir yönetici için e-posta adresi ayarlanmamış",
     "Data Request" : "Veri İsteği",
     "Request your data from the admins" : "Yöneticilerden verilerinizi istemenizi sağlar",
-    "Enable your users to request an export or deletion of their data. According options are added to the personal settings section. Administrations will be notified by email about the request." : "Kullanıcıların, kişisel ayarlar bölümünde belirtilen seçeneklere göre verilerinin dışa aktarılması ya da silinmesi isteğinde bulunmasını sağlar. Yapılan istek e-posta ile yöneticilere bildirilir.",
     "Account" : "Hesap",
     "You can request an export of your data or account deletion from the system administrator. This can take up to 30 days." : "Sistem yöneticisinden verilerinizin dışa aktarılmasını ya da hesabınızın silinmesini sistem isteyebilirsiniz. Bu işlemin tamamlanması 30 güne kadar zaman alabilir.",
     "Request data export" : "Verilerin dışa aktarılmasını isteyin",
-    "Request account deletion" : "Hesabınızın silinmesini isteyin"
+    "Request account deletion" : "Hesabınızın silinmesini isteyin",
+    "Enable your users to request an export or deletion of their data. According options are added to the personal settings section. Administrations will be notified by email about the request." : "Kullanıcıların, kişisel ayarlar bölümünde belirtilen seçeneklere göre verilerinin dışa aktarılması ya da silinmesi isteğinde bulunmasını sağlar. Yapılan istek e-posta ile yöneticilere bildirilir."
 },
 "nplurals=2; plural=(n > 1);");
