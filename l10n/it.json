@@ -9,6 +9,7 @@
     "No administrator has set an email address" : "Nessun amministratore ha configurato un indirizzo di posta",
     "Data Request" : "Richiesta di dati",
     "Request your data from the admins" : "Richiedi i tuoi dati agli amministratori",
+    "Enable your users to request an export or deletion of their data. According options are added to the personal settings section. Administrators will be notified by email about the request." : "Abilita i tuoi utenti a richiedere un'esportazione o un'eliminazione dei propri dati. Le relative opzioni sono aggiunte alla sezione delle impostazioni personali. Gli amministratori saranno notificati tramite email della richiesta.",
     "Account" : "Account",
     "You can request an export of your data or account deletion from the system administrator. This can take up to 30 days." : "Puoi richiedere un'esportazione dei tuoi dati o l'eliminazione dell'account all'amministratore di sistema. Ciò può richiedere fino a 30 giorni.",
     "Request data export" : "Richiedi di esportazione dati",
