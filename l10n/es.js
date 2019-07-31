@@ -11,6 +11,7 @@ OC.L10N.register(
     "No administrator has set an email address" : "Ningún administrador ha establecido una dirección de correo electrónico",
     "Data Request" : "Solicitud de datos",
     "Request your data from the admins" : "Solicite sus datos a los administradores.",
+    "Enable your users to request an export or deletion of their data. According options are added to the personal settings section. Administrators will be notified by email about the request." : "Permitir que los usuarios soliciten una exportación o una eliminación de sus datos. Las correspondientes opciones son añadidas a la sección de ajustes personales. Los Administradores será notificados por correo acerca de las peticiones.",
     "Account" : "Cuenta",
     "You can request an export of your data or account deletion from the system administrator. This can take up to 30 days." : "Puede solicitar la exportación de sus datos o la eliminación de la cuenta desde el administrador de sistema. Esto puede tardar hasta 30 días.",
     "Request data export" : "Solicitar la exportación de datos",
