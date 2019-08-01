@@ -9,6 +9,7 @@
     "No administrator has set an email address" : "Ниједан администратор није подесио адресу е-поште",
     "Data Request" : "Захтев за подацима",
     "Request your data from the admins" : "Захтевајте Ваше податке од администратора",
+    "Enable your users to request an export or deletion of their data. According options are added to the personal settings section. Administrators will be notified by email about the request." : "Омогућава вашим корисницима да извезу или обришу њихове податке. Ове опције су додате у одељак личних подешавања. Администратори ће бити обавештени е-поштом о оваквим захтевима.",
     "Account" : "Налог",
     "You can request an export of your data or account deletion from the system administrator. This can take up to 30 days." : "Можете захтевати извоз Ваших података или брисање налога од администратора система. Ово може потрајати до 30 дана.",
     "Request data export" : "Захтевајте извоз података",
