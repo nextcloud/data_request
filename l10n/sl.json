@@ -1,4 +1,5 @@
 { "translations": {
+    "sent!" : "poslano!",
     "Hello %s," : "Pozdravljeni, %s,",
     "Account" : "Račun",
     "Request account deletion" : "Zahtevaj izbris računa"
