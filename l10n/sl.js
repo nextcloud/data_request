@@ -1,6 +1,7 @@
 OC.L10N.register(
     "data_request",
     {
+    "sent!" : "poslano!",
     "Hello %s," : "Pozdravljeni, %s,",
     "Account" : "Račun",
     "Request account deletion" : "Zahtevaj izbris računa"
