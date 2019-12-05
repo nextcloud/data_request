@@ -37,7 +37,7 @@ class DataRequestControllerTest extends \Test\TestCase {
 	/** @var DataRequestController */
 	protected $controller;
 
-	public function setUp() {
+	protected function setUp(): void {
 		parent::setUp();
 
 		$this->requestService = $this->createMock(Request::class);

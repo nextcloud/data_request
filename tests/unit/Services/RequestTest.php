@@ -55,7 +55,7 @@ class RequestTest extends \Test\TestCase {
 	/** @var Defaults|PHPUnit_Framework_MockObject_MockObject */
 	protected $defaults;
 
-	public function setUp() {
+	protected function setUp(): void {
 		parent::setUp();
 
 		$this->groupManager = $this->createMock(IGroupManager::class);
