@@ -1,0 +1,5 @@
+{ "translations": {
+    "Hello %s," : "გამარჯობა %s,",
+    "Account" : "ანგარიში"
+},"pluralForm" :"nplurals=2; plural=(n!=1);"
+}
