@@ -1,0 +1,5 @@
+{ "translations": {
+    "Hello %s," : "Сайн байна уу, %s,",
+    "Account" : "аккаунт"
+},"pluralForm" :"nplurals=2; plural=(n != 1);"
+}
