@@ -3,6 +3,7 @@ OC.L10N.register(
     {
     "sent!" : "trimis!",
     "No administrator could have been contacted." : "Niciun administrator nu a putut fi contactat.",
+    "Hello %s," : "Salut %s,",
     "Account deletion request" : "Cerere ștergere cont",
     "Account" : "Cont",
     "Request account deletion" : "Cerere ștergere cont"
