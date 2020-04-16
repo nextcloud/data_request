@@ -1,4 +1,5 @@
 { "translations": {
-    "Hello %s," : "Xin chào %s,"
+    "Hello %s," : "Xin chào %s,",
+    "Account" : "Tài khoản"
 },"pluralForm" :"nplurals=1; plural=0;"
 }
