@@ -13,7 +13,7 @@ OC.L10N.register(
     "Request your data from the admins" : "Yöneticilerden verilerinizi istemenizi sağlar",
     "Enable your users to request an export or deletion of their data. According options are added to the personal settings section. Administrators will be notified by email about the request." : "Kullanıcılarınızın kişisel verilerini dışa aktarma ya da silinme isteğinde bulunmasını sağlar. Seçeneklere göre kişisel ayarlar bölümüne eklenir. Yapılan istekler yöneticilere e-posta ile bildirilir.",
     "Account" : "Hesap",
-    "You can request an export of your data or account deletion from the system administrator. This can take up to 30 days." : "Sistem yöneticisinden verilerinizin dışa aktarılmasını ya da hesabınızın silinmesini sistem isteyebilirsiniz. Bu işlemin tamamlanması 30 güne kadar zaman alabilir.",
+    "You can request an export of your data or account deletion from the system administrator. This can take up to 30 days." : "BT yöneticisinden verilerinizin dışa aktarılmasını ya da hesabınızın silinmesini isteyebilirsiniz. Bu işlemin tamamlanması 30 gün sürebilir.",
     "Request data export" : "Verilerin dışa aktarılmasını isteyin",
     "Request account deletion" : "Hesabınızın silinmesini isteyin",
     "Enable your users to request an export or deletion of their data. According options are added to the personal settings section. Administrations will be notified by email about the request." : "Kullanıcıların, kişisel ayarlar bölümünde belirtilen seçeneklere göre verilerinin dışa aktarılması ya da silinmesi isteğinde bulunmasını sağlar. Yapılan istek e-posta ile yöneticilere bildirilir."
