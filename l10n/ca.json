@@ -2,7 +2,7 @@
     "sent!" : "enviat!",
     "No administrator could have been contacted." : "No s’ha pogut contactar amb cap administrador.",
     "Personal data export request" : "Sol·licitud d'exportació de dades de caràcter personal",
-    "Hello %s," : "Hola %s,",
+    "Hello %s," : "Hola, %s,",
     "The user %s, identified by user id \"%s\", has requested an export of his personal data. Please take action accordingly." : "L'usuari %s, identificat per id d'usuari \"%s\", ha demanat una exportació de les seves dades personals. Si us plau, actueu en conseqüència.",
     "Account deletion request" : "Sol·licitud de supressió de compte",
     "The user %s, identified by user id \"%s\", has requested to delete the account. Please take action accordingly." : "L'usuari %s, identificat per id d'usuari \"%s\", ha demanat suprimir el compte. Si us plau, actueu en conseqüència.",
