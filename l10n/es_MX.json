@@ -12,7 +12,6 @@
     "Account" : "Cuenta",
     "You can request an export of your data or account deletion from the system administrator. This can take up to 30 days." : "Puedes solicitar exportar tus datoso borrar la cuenta a tu adminsitrador del sistema. Esto puede tomar hasta 30 días.",
     "Request data export" : "Solicitar exportar datos",
-    "Request account deletion" : "Solicitar borrado de cuenta",
-    "Enable your users to request an export or deletion of their data. According options are added to the personal settings section. Administrations will be notified by email about the request." : "Permítele a tus usuarios solciitar un exportado o el borrado de sus datos. Las opciones correspondientes se agregan a la sección de configuración personal. Los administradores serán notificados por correo electrónico de la solicitud."
+    "Request account deletion" : "Solicitar borrado de cuenta"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }
