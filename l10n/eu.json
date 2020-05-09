@@ -13,7 +13,6 @@
     "Account" : "Kontua",
     "You can request an export of your data or account deletion from the system administrator. This can take up to 30 days." : "Zure datuak esportatzea edo zure kontua ezabatzea eskatu diezaiokezu sistemaren kudeatzaileari. Honek 30 egun har ditzake",
     "Request data export" : "Eskatu datuen esportazioa",
-    "Request account deletion" : "Eskatu kontuaren ezabaketa",
-    "Enable your users to request an export or deletion of their data. According options are added to the personal settings section. Administrations will be notified by email about the request." : "Aktibatu zure erabiltzaileek beren datuak esportatu edo ezabatzea eskatzeko aukera. Dagozkion aukerak erabiltzaile bakoitzaren aukera pertsonalen atalean agertuko dira. Eskaera bat dagoenean sistemaren kudeatzaileek mezu bat jasoko dute epostaz."
+    "Request account deletion" : "Eskatu kontuaren ezabaketa"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }
