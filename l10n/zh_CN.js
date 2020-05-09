@@ -15,7 +15,6 @@ OC.L10N.register(
     "Account" : "账号",
     "You can request an export of your data or account deletion from the system administrator. This can take up to 30 days." : "您可以向管理员申请导出数据或删除账号。这可能需要长达 30 天。",
     "Request data export" : "请求导出数据",
-    "Request account deletion" : "请求删除账号",
-    "Enable your users to request an export or deletion of their data. According options are added to the personal settings section. Administrations will be notified by email about the request." : "允许您的用户请求导出或删除他们的数据。相应选项会加入个人设置部分。管理员将会收到请求的通知电子邮件。"
+    "Request account deletion" : "请求删除账号"
 },
 "nplurals=1; plural=0;");

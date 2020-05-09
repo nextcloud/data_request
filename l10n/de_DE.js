@@ -15,7 +15,6 @@ OC.L10N.register(
     "Account" : "Konto",
     "You can request an export of your data or account deletion from the system administrator. This can take up to 30 days." : "Sie können einen Export Ihrer Daten oder die Konto-Löschung beim System-Administrator anfordern. Das kann bis zu 30 Tage dauern.",
     "Request data export" : "Daten-Export anfordern",
-    "Request account deletion" : "Kontolöschung anfordern",
-    "Enable your users to request an export or deletion of their data. According options are added to the personal settings section. Administrations will be notified by email about the request." : "Ihren Nutzern erlauben einen Export oder die Löschung ihrer Daten anzufordern. Passende Optionen werden in der persönlichen Seite der Nutzer angezeigt. Administratoren werden per Mail über die Anforderung benachrichtigt."
+    "Request account deletion" : "Kontolöschung anfordern"
 },
 "nplurals=2; plural=(n != 1);");

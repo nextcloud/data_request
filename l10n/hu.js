@@ -15,7 +15,6 @@ OC.L10N.register(
     "Account" : "Fiók",
     "You can request an export of your data or account deletion from the system administrator. This can take up to 30 days." : "Az adatai exportálását vagy a fiókja törlését kérheti az adminisztrátortól. Ez akár 30 napig is eltarthat.",
     "Request data export" : "Adatexport kérése",
-    "Request account deletion" : "Fióktörlés kérése",
-    "Enable your users to request an export or deletion of their data. According options are added to the personal settings section. Administrations will be notified by email about the request." : "Engedélyezze, hogy a felhasználók az adataik exportálását vagy törlését kérhessék. A megfelelő lehetőségek a személy beállítások szakaszba kerülnek. Az adminisztrátorok e-mailben lesznek értesítve a kérésről."
+    "Request account deletion" : "Fióktörlés kérése"
 },
 "nplurals=2; plural=(n != 1);");

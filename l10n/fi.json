@@ -12,7 +12,6 @@
     "Account" : "Tili",
     "You can request an export of your data or account deletion from the system administrator. This can take up to 30 days." : "Voit pyytää tietojesi viemistä tai tilin poistamista järjestelmän ylläpitäjiltä. Toimenpiteessä voi kestää 30 päivää.",
     "Request data export" : "Pyydän tietojen vientiä",
-    "Request account deletion" : "Pyydä tilin poistoa",
-    "Enable your users to request an export or deletion of their data. According options are added to the personal settings section. Administrations will be notified by email about the request." : "Salli käyttäjien pyytää tietojensa viemistä tai tilinsä poistamista. Valinnat lisätään näkyviin käyttäjien henkilökohtaiseen osioon. Ylläpidolle ilmoitetaan saapuneista tietopyynnöistä sähköpostitse."
+    "Request account deletion" : "Pyydä tilin poistoa"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }

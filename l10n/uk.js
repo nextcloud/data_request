@@ -15,7 +15,6 @@ OC.L10N.register(
     "Account" : "Обліковий запис",
     "You can request an export of your data or account deletion from the system administrator. This can take up to 30 days." : "Ви можете надіслати запит на експорт ваших даних або на видалення вашого облікового запису. Це може тривати до 30 днів.",
     "Request data export" : "Запит на експорт даних",
-    "Request account deletion" : "Запит на видалення облікового запису",
-    "Enable your users to request an export or deletion of their data. According options are added to the personal settings section. Administrations will be notified by email about the request." : "Дозволяє вашим користувачам надіслати запит на експорт або видалення їхніх даних. Відповідні опції додано до розділу персональних налаштувань. Адміністраторів буде сповіщено про запити."
+    "Request account deletion" : "Запит на видалення облікового запису"
 },
 "nplurals=4; plural=(n % 1 == 0 && n % 10 == 1 && n % 100 != 11 ? 0 : n % 1 == 0 && n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14) ? 1 : n % 1 == 0 && (n % 10 ==0 || (n % 10 >=5 && n % 10 <=9) || (n % 100 >=11 && n % 100 <=14 )) ? 2: 3);");
