@@ -14,7 +14,6 @@ OC.L10N.register(
     "Account" : "Konts",
     "You can request an export of your data or account deletion from the system administrator. This can take up to 30 days." : "Tu vari pieprasīt savu datu eksportu vai konta dzēšanu no sistēmas administrātora. Tas var aizņemt līdz pat 30 dienām.",
     "Request data export" : "Pieprasīt datu eksportu",
-    "Request account deletion" : "Pieprasīt konta dzēšanu",
-    "Enable your users to request an export or deletion of their data. According options are added to the personal settings section. Administrations will be notified by email about the request." : "Ļauj saviem lietotājiem pieprasīt savu datu eksportu vai dzēšanu. Balstoties uz iespējām, kas pievienotas personas iestatījumos. Administrātoriem pieprasījums tiks paziņots caur e-pastu. "
+    "Request account deletion" : "Pieprasīt konta dzēšanu"
 },
 "nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : 2);");

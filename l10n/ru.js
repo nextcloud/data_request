@@ -15,7 +15,6 @@ OC.L10N.register(
     "Account" : "Аккаунт",
     "You can request an export of your data or account deletion from the system administrator. This can take up to 30 days." : "Вы можете запросить у системного администратора экспорт ваших данных или удаление учетной записи. Это может занять до 30 дней.",
     "Request data export" : "Запрос экспорта данных",
-    "Request account deletion" : "Запрос удаления аккаунта",
-    "Enable your users to request an export or deletion of their data. According options are added to the personal settings section. Administrations will be notified by email about the request." : "Позволяет пользователям запрашивать экспорт или удаление своих данных. В разделе личных настроек добавляются опции. Администоры будут уведомлены по электронной почте о запросе."
+    "Request account deletion" : "Запрос удаления аккаунта"
 },
 "nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);");
