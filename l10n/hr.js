@@ -15,7 +15,6 @@ OC.L10N.register(
     "Account" : "Račun",
     "You can request an export of your data or account deletion from the system administrator. This can take up to 30 days." : "Možete zatražiti izvoz podataka ili brisanje računa od administratora sustava. To može potrajati do 30 dana.",
     "Request data export" : "Zatraži izvoz podataka",
-    "Request account deletion" : "Zatraži brisanje računa",
-    "Enable your users to request an export or deletion of their data. According options are added to the personal settings section. Administrations will be notified by email about the request." : "Omogućite korisnicima da zatraže izvoz ili brisanje svojih podataka. Odgovarajuće mogućnosti dodaju se odjeljku s osobnim postavkama. Administratori će biti obaviješteni putem e-pošte o zahtjevu."
+    "Request account deletion" : "Zatraži brisanje računa"
 },
 "nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;");
