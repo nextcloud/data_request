@@ -2,12 +2,13 @@
 :man_judge: Nextcloud app to let users request a data export or account removal
 
 
-Features
+## Features
 
-📊 Let useres request there safed data
-💬 Automatic E-Mail sending 
+📊 Let users request their own data
+
+💬 Automatic Email sending 
 
 
-Bugs
+## Bugs
 
 https://github.com/nextcloud/data_request/issues
