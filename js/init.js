@@ -22,6 +22,6 @@
 
 /** global: OCA */
 
-$(document).ready(function() {
+window.addEventListener('DOMContentLoaded', function() {
 	OCA.DataRequest.App.init();
 });
