@@ -1,5 +1,18 @@
 { "translations": {
+    "sent!" : "Испратено!",
+    "No administrator could have been contacted." : "Ниту еден администратор не можеше да биде контактиран.",
+    "Personal data export request" : "Барање за извоз на лични податоци",
     "Hello %s," : "Здраво %s,",
-    "Account" : "Сметка"
+    "The user %s, identified by user id \"%s\", has requested an export of his personal data. Please take action accordingly." : "Корисникот %s, идентифициран со id \"%s\", испрати барање за извезување на лични податоци. Ве молиме, преземете мерки соодветно.",
+    "Account deletion request" : "Барање за бришење на сметката",
+    "The user %s, identified by user id \"%s\", has requested to delete the account. Please take action accordingly." : "Корисникот %s, идентифициран со id \"%s\", испрати барање за бришење на сметката. Ве молиме, преземете мерки соодветно.",
+    "No administrator has set an email address" : "Ниту еден администратор не поставил адреса за е-пошта",
+    "Data Request" : "Барање за податоци",
+    "Request your data from the admins" : "Побарајте ги вашите податоци од администраторот",
+    "Enable your users to request an export or deletion of their data. According options are added to the personal settings section. Administrators will be notified by email about the request." : "Овозможете им на вашите корисници да побараат извоз или бришење на нивните податоци. Администраторите ќе бидат известени по е-пошта за барањето.",
+    "Account" : "Сметка",
+    "You can request an export of your data or account deletion from the system administrator. This can take up to 30 days." : "Може да побарате извоз на вашите податоци или бришење или сметка од администраторот на системот. Ова може да трае до 30 дена.",
+    "Request data export" : "Барање за извоз на податоци",
+    "Request account deletion" : "Барање за бришење на сметката"
 },"pluralForm" :"nplurals=2; plural=(n % 10 == 1 && n % 100 != 11) ? 0 : 1;"
 }
