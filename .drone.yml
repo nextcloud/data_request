@@ -2,18 +2,6 @@ kind: pipeline
 name: compatibility
 
 steps:
-  - name: syntax-php7.2
-    image: nextcloudci/php7.2:php7.2-13
-    environment:
-      APP_NAME: data_request
-      CORE_BRANCH: master
-      DATABASEHOST: sqlite
-    commands:
-      - wget https://raw.githubusercontent.com/nextcloud/travis_ci/master/before_install.sh
-      - bash ./before_install.sh $APP_NAME $CORE_BRANCH $DATABASEHOST
-      - cd ../server
-      - composer install
-      - ./lib/composer/bin/parallel-lint apps/$APP_NAME/
   - name: syntax-php7.4
     image: nextcloudci/php7.4:2
     environment:
@@ -21,11 +9,8 @@ steps:
       CORE_BRANCH: master
       DATABASEHOST: sqlite
     commands:
-      - wget https://raw.githubusercontent.com/nextcloud/travis_ci/master/before_install.sh
-      - bash ./before_install.sh $APP_NAME $CORE_BRANCH $DATABASEHOST
-      - cd ../server
       - composer install
-      - ./lib/composer/bin/parallel-lint apps/$APP_NAME/
+      - ./vendor/bin/parallel-lint --exclude ./vendor/ .
   - name: app-code-check
     image: nextcloudci/php7.3:php7.3-5
     environment:
@@ -38,36 +23,6 @@ steps:
       - cd ../server
       - ./occ app:check-code $APP_NAME
       - cd apps/$APP_NAME/
-
-trigger:
-  branch:
-    - master
-    - stable*
-  event:
-    - pull_request
-    - push
-
----
-kind: pipeline
-name: unit-sqlite-php7.2
-
-steps:
-  - name: sqlite-php7.2
-    image: nextcloudci/php7.2:php7.2-13
-    environment:
-      APP_NAME: data_request
-      CORE_BRANCH: master
-      DATABASEHOST: sqlite
-    commands:
-      - wget https://raw.githubusercontent.com/nextcloud/travis_ci/master/before_install.sh
-      - bash ./before_install.sh $APP_NAME $CORE_BRANCH $DATABASEHOST
-      - cd ../server
-      - ./occ app:enable $APP_NAME
-      - cd apps/$APP_NAME
-
-      # Run phpunit tests
-      - cd tests/unit/
-      - phpunit --configuration phpunit.xml
 
 trigger:
   branch:
