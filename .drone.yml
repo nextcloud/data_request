@@ -3,7 +3,7 @@ name: compatibility
 
 steps:
   - name: syntax-php7.4
-    image: nextcloudci/php7.4:2
+    image: nextcloudci/php7.4:php7.4-3
     environment:
       APP_NAME: data_request
       CORE_BRANCH: master
@@ -32,6 +32,7 @@ trigger:
     - pull_request
     - push
 
+type: docker
 ---
 kind: pipeline
 name: unit-sqlite-php7.3
@@ -62,13 +63,15 @@ trigger:
     - pull_request
     - push
 
+type: docker
+
 ---
 kind: pipeline
 name: unit-sqlite-php7.4
 
 steps:
   - name: sqlite-php7.4
-    image: nextcloudci/php7.4:2
+    image: nextcloudci/php7.4:php7.4-3
     environment:
       APP_NAME: data_request
       CORE_BRANCH: master
@@ -91,3 +94,5 @@ trigger:
   event:
     - pull_request
     - push
+
+type: docker
