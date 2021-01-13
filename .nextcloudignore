@@ -1,5 +1,8 @@
+composer.json
+composer.lock
 .drone.yml
 .git
+.github
 .gitignore
 krankerl.toml
 Makefile
