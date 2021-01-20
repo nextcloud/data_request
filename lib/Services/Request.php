@@ -136,7 +136,7 @@ class Request {
 
 		$template->addHeader();
 		$template->addHeading($l->t('Hello %s,',[$admin->getDisplayName()]));
-		$template->addBodyText($l->t('The user %s, identified by user id "%s", has requested an export of his personal data. Please take action accordingly.', [$this->requester->getDisplayName(), $this->requester->getUID()]));
+		$template->addBodyText($l->t('The user %s, identified by user id "%s", has requested an export of their personal data. Please take action accordingly.', [$this->requester->getDisplayName(), $this->requester->getUID()]));
 
 		$template->addFooter();
 
@@ -151,7 +151,7 @@ class Request {
 
 		$template->addHeader();
 		$template->addHeading($l->t('Hello %s,',[$admin->getDisplayName()]));
-		$template->addBodyText($l->t('The user %s, identified by user id "%s", has requested to delete the account. Please take action accordingly.', [$this->requester->getDisplayName(), $this->requester->getUID()]));
+		$template->addBodyText($l->t('The user %s, identified by user id "%s", has requested to delete their account. Please take action accordingly.', [$this->requester->getDisplayName(), $this->requester->getUID()]));
 
 		$template->addFooter();
 
