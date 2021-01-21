@@ -5,9 +5,7 @@ OC.L10N.register(
     "No administrator could have been contacted." : "Nepodarilo sa kontaktovať žiadneho administrátora",
     "Personal data export request" : "Žiadosť o export osobných údajov",
     "Hello %s," : "Ahoj %s,",
-    "The user %s, identified by user id \"%s\", has requested an export of his personal data. Please take action accordingly." : "Užívateľ %s, prihlásený identifikátorom \"%s\", si vyžiadal export svojich osobných údajov. Vykonajte príslušné kroky.",
     "Account deletion request" : "Žiadosť o zmazanie účtu",
-    "The user %s, identified by user id \"%s\", has requested to delete the account. Please take action accordingly." : "Užívateľ %s, prihlásený identifikátorom \"%s\", si vyžiadal zmazanie účtu. Vykonajte príslušné kroky.",
     "No administrator has set an email address" : "Žiaden administrátor si nenastavil emailovú adresu",
     "Data Request" : "Vyžiadať dáta",
     "Request your data from the admins" : "Vyžiadať dáta od administrátora",
@@ -15,6 +13,8 @@ OC.L10N.register(
     "Account" : "Účet",
     "You can request an export of your data or account deletion from the system administrator. This can take up to 30 days." : "Od administrátora systému môžete požiadať o export údajov alebo vymazanie účtu. Môže to trvať až 30 dní.",
     "Request data export" : "Vyžiadať export dát",
-    "Request account deletion" : "Žiadosť o zmazanie účtu"
+    "Request account deletion" : "Žiadosť o zmazanie účtu",
+    "The user %s, identified by user id \"%s\", has requested an export of his personal data. Please take action accordingly." : "Užívateľ %s, prihlásený identifikátorom \"%s\", si vyžiadal export svojich osobných údajov. Vykonajte príslušné kroky.",
+    "The user %s, identified by user id \"%s\", has requested to delete the account. Please take action accordingly." : "Užívateľ %s, prihlásený identifikátorom \"%s\", si vyžiadal zmazanie účtu. Vykonajte príslušné kroky."
 },
 "nplurals=4; plural=(n % 1 == 0 && n == 1 ? 0 : n % 1 == 0 && n >= 2 && n <= 4 ? 1 : n % 1 != 0 ? 2: 3);");
