@@ -3,9 +3,7 @@
     "No administrator could have been contacted." : "Hiçbir yönetici ile iletişim kurulamadı.",
     "Personal data export request" : "Kişisel verileri dışa aktarma isteği",
     "Hello %s," : "Merhaba %s,",
-    "The user %s, identified by user id \"%s\", has requested an export of his personal data. Please take action accordingly." : "%s kullanıcısı (\"%s\" kodlu), kişisel verilerini dışa aktarma isteğinde bulundu. Lütfen gerekli işlemleri yapın.",
     "Account deletion request" : "Hesap silme isteği",
-    "The user %s, identified by user id \"%s\", has requested to delete the account. Please take action accordingly." : "%s kullanıcısı (%s kodlu), hesabının silinmesi isteğinde bulundu. Lütfen gerekli işlemleri yapın.",
     "No administrator has set an email address" : "Hiç bir yönetici için e-posta adresi ayarlanmamış",
     "Data Request" : "Veri İsteği",
     "Request your data from the admins" : "Yöneticilerden verilerinizi istemenizi sağlar",
@@ -13,6 +11,8 @@
     "Account" : "Hesap",
     "You can request an export of your data or account deletion from the system administrator. This can take up to 30 days." : "BT yöneticisinden verilerinizin dışa aktarılmasını ya da hesabınızın silinmesini isteyebilirsiniz. Bu işlemin tamamlanması 30 gün sürebilir.",
     "Request data export" : "Verilerin dışa aktarılmasını isteyin",
-    "Request account deletion" : "Hesabınızın silinmesini isteyin"
+    "Request account deletion" : "Hesabınızın silinmesini isteyin",
+    "The user %s, identified by user id \"%s\", has requested an export of his personal data. Please take action accordingly." : "%s kullanıcısı (\"%s\" kodlu), kişisel verilerini dışa aktarma isteğinde bulundu. Lütfen gerekli işlemleri yapın.",
+    "The user %s, identified by user id \"%s\", has requested to delete the account. Please take action accordingly." : "%s kullanıcısı (%s kodlu), hesabının silinmesi isteğinde bulundu. Lütfen gerekli işlemleri yapın."
 },"pluralForm" :"nplurals=2; plural=(n > 1);"
 }

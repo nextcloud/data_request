@@ -5,9 +5,7 @@ OC.L10N.register(
     "No administrator could have been contacted." : "연락할 수 있는 관리자가 없습니다.",
     "Personal data export request" : "개인 데이터 내보내기 요청",
     "Hello %s," : "안녕하세요 %s 님,",
-    "The user %s, identified by user id \"%s\", has requested an export of his personal data. Please take action accordingly." : "사용자 %s, 사용자 ID \"%s\" 님이 개인 데이터 내보내기를 요청했습니다. 요청을 처리해 주십시오.",
     "Account deletion request" : "계정 삭제 요청",
-    "The user %s, identified by user id \"%s\", has requested to delete the account. Please take action accordingly." : "사용자 %s, 사용자 ID \"%s\" 님이 계정 삭제를 요청했습니다. 요청을 처리해 주십시오.",
     "No administrator has set an email address" : "이메일 주소를 설정한 관리자 없음",
     "Data Request" : "데이터 요청",
     "Request your data from the admins" : "관리자에게 내 데이터 요청",
@@ -15,6 +13,8 @@ OC.L10N.register(
     "Account" : "계정",
     "You can request an export of your data or account deletion from the system administrator. This can take up to 30 days." : "시스템 관리자에게 데이터 복사본이나 계정 삭제를 요청할 수 있습니다. 최대 30일이 소요될 수 있습니다.",
     "Request data export" : "데이터 내보내기 요청",
-    "Request account deletion" : "계정 삭제 요청"
+    "Request account deletion" : "계정 삭제 요청",
+    "The user %s, identified by user id \"%s\", has requested an export of his personal data. Please take action accordingly." : "사용자 %s, 사용자 ID \"%s\" 님이 개인 데이터 내보내기를 요청했습니다. 요청을 처리해 주십시오.",
+    "The user %s, identified by user id \"%s\", has requested to delete the account. Please take action accordingly." : "사용자 %s, 사용자 ID \"%s\" 님이 계정 삭제를 요청했습니다. 요청을 처리해 주십시오."
 },
 "nplurals=1; plural=0;");
