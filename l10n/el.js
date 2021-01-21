@@ -5,9 +5,7 @@ OC.L10N.register(
     "No administrator could have been contacted." : "Δεν ήταν δυνατή η επικοινωνία με κάποιον διαχειριστή.",
     "Personal data export request" : "Αίτημα εξαγωγής προσωπικών δεδομένων",
     "Hello %s," : "Γεια σου %s,",
-    "The user %s, identified by user id \"%s\", has requested an export of his personal data. Please take action accordingly." : "Ο χρήστης %s, με αναγνωριστικό χρήστη \"%s\", αιτήθηκε την εξαγωγή των προσωπικών δεδομένων του. Παρακαλώ προβείτε σε κατάλληλες ενέργειες.",
     "Account deletion request" : "Αίτηση διαγραφής λογαριασμού",
-    "The user %s, identified by user id \"%s\", has requested to delete the account. Please take action accordingly." : "Ο χρήστης %s, με αναγνωριστικό χρήστη \"%s\", αιτήθηκε την διαγραφή  λογαριασμό του. Παρακαλώ προβείτε σε κατάλληλες ενέργειες.",
     "No administrator has set an email address" : "Κανένας διαχειριστής δεν όρισε μια διεύθυνση ηλεκτρονικού ταχυδρομείου",
     "Data Request" : "Αίτημα δεδομένων",
     "Request your data from the admins" : "Αιτηθείτε τα δεδομένα από τους διαχειριστές",
@@ -15,6 +13,8 @@ OC.L10N.register(
     "Account" : "Λογαριασμός",
     "You can request an export of your data or account deletion from the system administrator. This can take up to 30 days." : "Μπορείτε να αιτηθείτε εξαωγή των δεδομένων σας ή την διαγρφή λογαριασμού σας από τον διαχειριστή συστήματος. Μπορεί να διαρκέσει έως και 30 ημέρες.",
     "Request data export" : "Αίτημα εξαγωγής δεδομένων",
-    "Request account deletion" : "Αίτηση διαγραφής λογαριασμού"
+    "Request account deletion" : "Αίτηση διαγραφής λογαριασμού",
+    "The user %s, identified by user id \"%s\", has requested an export of his personal data. Please take action accordingly." : "Ο χρήστης %s, με αναγνωριστικό χρήστη \"%s\", αιτήθηκε την εξαγωγή των προσωπικών δεδομένων του. Παρακαλώ προβείτε σε κατάλληλες ενέργειες.",
+    "The user %s, identified by user id \"%s\", has requested to delete the account. Please take action accordingly." : "Ο χρήστης %s, με αναγνωριστικό χρήστη \"%s\", αιτήθηκε την διαγραφή  λογαριασμό του. Παρακαλώ προβείτε σε κατάλληλες ενέργειες."
 },
 "nplurals=2; plural=(n != 1);");

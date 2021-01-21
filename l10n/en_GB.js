@@ -5,9 +5,7 @@ OC.L10N.register(
     "No administrator could have been contacted." : "No administrator could have been contacted.",
     "Personal data export request" : "Personal data export request",
     "Hello %s," : "Hello %s,",
-    "The user %s, identified by user id \"%s\", has requested an export of his personal data. Please take action accordingly." : "The user %s, identified by user id \"%s\", has requested an export of his personal data. Please take action accordingly.",
     "Account deletion request" : "Account deletion request",
-    "The user %s, identified by user id \"%s\", has requested to delete the account. Please take action accordingly." : "The user %s, identified by user id \"%s\", has requested to delete the account. Please take action accordingly.",
     "No administrator has set an email address" : "No administrator has set an email address",
     "Data Request" : "Data Request",
     "Request your data from the admins" : "Request your data from the admins",
@@ -15,6 +13,8 @@ OC.L10N.register(
     "Account" : "Account",
     "You can request an export of your data or account deletion from the system administrator. This can take up to 30 days." : "You can request an export of your data or account deletion from the system administrator. This can take up to 30 days.",
     "Request data export" : "Request data export",
-    "Request account deletion" : "Request account deletion"
+    "Request account deletion" : "Request account deletion",
+    "The user %s, identified by user id \"%s\", has requested an export of his personal data. Please take action accordingly." : "The user %s, identified by user id \"%s\", has requested an export of his personal data. Please take action accordingly.",
+    "The user %s, identified by user id \"%s\", has requested to delete the account. Please take action accordingly." : "The user %s, identified by user id \"%s\", has requested to delete the account. Please take action accordingly."
 },
 "nplurals=2; plural=(n != 1);");
