@@ -7,6 +7,7 @@ OC.L10N.register(
     "Hello %s," : "%s你好",
     "Account deletion request" : "帳戶刪除請求",
     "Data Request" : "數據請求",
-    "Account" : "帳戶"
+    "Account" : "帳戶",
+    "Request account deletion" : "帳戶刪除請求"
 },
 "nplurals=1; plural=0;");
