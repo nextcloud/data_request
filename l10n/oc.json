@@ -1,0 +1,8 @@
+{ "translations": {
+    "sent!" : "enviat !",
+    "Hello %s," : "Bonjorn %s,",
+    "Account deletion request" : "Demanda de supression de compte",
+    "Data Request" : "Demanda de donadas",
+    "Account" : "Compte"
+},"pluralForm" :"nplurals=2; plural=(n > 1);"
+}
