@@ -16,7 +16,7 @@ OC.L10N.register(
     "You can request an export of your data or account deletion from the system administrator. This can take up to 30 days." : "您可以要求系統管理員導出數據或刪除賬戶。需時可達30天。",
     "Request data export" : "請求數據導出",
     "Request account deletion" : "請求賬戶刪除",
-    "The user %s, identified by user id \"%s\", has requested an export of his personal data. Please take action accordingly." : "用戶 %s（用戶 ID \"%s\"）已請求導出其個人數據。 請採取相應的措施。",
+    "The user %s, identified by user id \"%s\", has requested an export of his personal data. Please take action accordingly." : "用戶 %s（用戶 ID \"%s\"）已請求導出其個人數據。請採取相應的措施。",
     "The user %s, identified by user id \"%s\", has requested to delete the account. Please take action accordingly." : "用戶 %s（ID “%s”）已請求刪除其賬戶。請採取相應的措施。"
 },
 "nplurals=1; plural=0;");
