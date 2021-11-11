@@ -6,7 +6,7 @@ steps:
     image: nextcloudci/php7.4:php7.4-3
     environment:
       APP_NAME: data_request
-      CORE_BRANCH: master
+      CORE_BRANCH: stable23
       DATABASEHOST: sqlite
     commands:
       - composer install
@@ -42,7 +42,7 @@ steps:
     image: nextcloudci/php7.3:php7.3-5
     environment:
       APP_NAME: data_request
-      CORE_BRANCH: master
+      CORE_BRANCH: stable23
       DATABASEHOST: sqlite
     commands:
       - wget https://raw.githubusercontent.com/nextcloud/travis_ci/master/before_install.sh
@@ -74,7 +74,7 @@ steps:
     image: nextcloudci/php7.4:php7.4-3
     environment:
       APP_NAME: data_request
-      CORE_BRANCH: master
+      CORE_BRANCH: stable23
       DATABASEHOST: sqlite
     commands:
       - wget https://raw.githubusercontent.com/nextcloud/travis_ci/master/before_install.sh
