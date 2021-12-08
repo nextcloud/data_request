@@ -10,7 +10,7 @@ OC.L10N.register(
     "The user %s, identified by user id \"%s\", has requested to delete their account. Please take action accordingly." : "Uporabnik %s, določen z uporabniškim ID »%s«, prosi za izbris računa. Opravilo zahteva skrbniško potrditev.",
     "No administrator has set an email address" : "Skrbnik še ni nastavil elektronskega naslova",
     "Data Request" : "Zahteva za pridobitev podatkov",
-    "Request your data from the admins" : "Zahtevaj podatke prek skrbnikov sistema",
+    "Request your data from the admins" : "Zahtevaj podatke od skrbnikov sistema",
     "Enable your users to request an export or deletion of their data. According options are added to the personal settings section. Administrators will be notified by email about the request." : "Omogoči uporabnikom zahtevo za izvoz in brisanje podatkov. Te možnosti so dodane k osebnim nastavitvam. O podani zahtevi so skrbniki obveščeni po elektronski pošti.",
     "Account" : "Račun",
     "You can request an export of your data or account deletion from the system administrator. This can take up to 30 days." : "Zahtevo za izvoz osebnih podatkov, ali brisanje računa, je mogoče poslati skrbnikom sistema. Postopek lahko traja do 30 dni.",
