@@ -13,8 +13,6 @@
     "Account" : "Fiók",
     "You can request an export of your data or account deletion from the system administrator. This can take up to 30 days." : "Az adatai exportálását vagy a fiókja törlését kérheti az adminisztrátortól. Ez akár 30 napig is eltarthat.",
     "Request data export" : "Adatexport kérése",
-    "Request account deletion" : "Fióktörlés kérése",
-    "The user %s, identified by user id \"%s\", has requested an export of his personal data. Please take action accordingly." : "%s felhasználó (felhasználóazonosítója „%s”) a személyes adatainak exportálását kérte. Tegye meg a lépéseket ennek megfelelően.",
-    "The user %s, identified by user id \"%s\", has requested to delete the account. Please take action accordingly." : "%s felhasználó (felhasználóazonosítója „%s”) a fiókja törlését kérte. Tegye meg a lépéseket ennek megfelelően."
+    "Request account deletion" : "Fióktörlés kérése"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }

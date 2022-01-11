@@ -15,8 +15,6 @@ OC.L10N.register(
     "Account" : "Сметка",
     "You can request an export of your data or account deletion from the system administrator. This can take up to 30 days." : "Може да побарате извоз на вашите податоци или бришење или сметка од администраторот на системот. Ова може да трае до 30 дена.",
     "Request data export" : "Барање за извоз на податоци",
-    "Request account deletion" : "Барање за бришење на сметката",
-    "The user %s, identified by user id \"%s\", has requested an export of his personal data. Please take action accordingly." : "Корисникот %s, идентифициран со id \"%s\", испрати барање за извезување на лични податоци. Ве молиме, преземете мерки соодветно.",
-    "The user %s, identified by user id \"%s\", has requested to delete the account. Please take action accordingly." : "Корисникот %s, идентифициран со id \"%s\", испрати барање за бришење на сметката. Ве молиме, преземете мерки соодветно."
+    "Request account deletion" : "Барање за бришење на сметката"
 },
 "nplurals=2; plural=(n % 10 == 1 && n % 100 != 11) ? 0 : 1;");

@@ -15,8 +15,6 @@ OC.L10N.register(
     "Account" : "Профил",
     "You can request an export of your data or account deletion from the system administrator. This can take up to 30 days." : "Можете да поискате изнасяне на вашите данни или изтриване на профил от системния администратор. Това може да отнеме до 30 дни.",
     "Request data export" : "Заявка за износ на данни",
-    "Request account deletion" : "Заявка за изтриване на профил",
-    "The user %s, identified by user id \"%s\", has requested an export of his personal data. Please take action accordingly." : "Потребителят %s, идентифициран с потребителски идентификатор \"%s\", поиска износ на личните си данни. Моля, предприемете съответните действия.",
-    "The user %s, identified by user id \"%s\", has requested to delete the account. Please take action accordingly." : "Потребителят %s, идентифициран с потребителски идентификатор \"%s\", поиска да изтрие профила си. Моля, предприемете съответните действия."
+    "Request account deletion" : "Заявка за изтриване на профил"
 },
 "nplurals=2; plural=(n != 1);");

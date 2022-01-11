@@ -13,8 +13,6 @@
     "Account" : "Konto",
     "You can request an export of your data or account deletion from the system administrator. This can take up to 30 days." : "Możesz zażądać eksportu danych lub usunięcia konta od administratora systemu. Może to potrwać do 30 dni.",
     "Request data export" : "Zażądaj eksportu danych",
-    "Request account deletion" : "Zażądaj usunięcia konta",
-    "The user %s, identified by user id \"%s\", has requested an export of his personal data. Please take action accordingly." : "Użytkownik %s, zidentyfikowany jako \"%s\", zażądał eksportu swoich danych osobowych. Proszę podjąć odpowiednie działania.",
-    "The user %s, identified by user id \"%s\", has requested to delete the account. Please take action accordingly." : "Użytkownik %s, zidentyfikowany jako \"%s\", zażądał usunięcia swojego konta. Proszę podjąć odpowiednie działania."
+    "Request account deletion" : "Zażądaj usunięcia konta"
 },"pluralForm" :"nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && (n%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && n%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);"
 }

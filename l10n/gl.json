@@ -13,8 +13,6 @@
     "Account" : "Conta",
     "You can request an export of your data or account deletion from the system administrator. This can take up to 30 days." : "Pode solicitar a exportación dos seus datos ou a eliminación da conta dende o administrador do sistema. Isto pode demorar ata 30 días. ",
     "Request data export" : "Solicitar a exportación de datos ",
-    "Request account deletion" : "Solicitar a eliminación da conta ",
-    "The user %s, identified by user id \"%s\", has requested an export of his personal data. Please take action accordingly." : "O usuario %s, identificado polo ID de usuario «%s», solicitou a exportación dos seus datos persoais. Actúe en consecuencia. ",
-    "The user %s, identified by user id \"%s\", has requested to delete the account. Please take action accordingly." : "O usuario %s, identificado polo ID de usuario «%s», solicitou a eliminación da súa conta. Actúe en consecuencia. "
+    "Request account deletion" : "Solicitar a eliminación da conta "
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }
