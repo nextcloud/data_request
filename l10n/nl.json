@@ -13,8 +13,6 @@
     "Account" : "Account",
     "You can request an export of your data or account deletion from the system administrator. This can take up to 30 days." : "Je kunt een verzoek indienen voor een export van je gegevens, of verwijdering van je account door een systeem administrator. Dit kan tot 30 dagen duren.",
     "Request data export" : "Export gegevens aanvragen",
-    "Request account deletion" : "Verwijdering van account aanvragen ",
-    "The user %s, identified by user id \"%s\", has requested an export of his personal data. Please take action accordingly." : "De gebruiker %s, identificeerbaar met gebruikers id \"%s\", heeft een export van zijn persoonlijke gegevens aangevraagd. Neem a.u.b. de benodigde acties.",
-    "The user %s, identified by user id \"%s\", has requested to delete the account. Please take action accordingly." : "De gebruiker %s, identificeerbaar met gebruikers id \"%s\", heeft verwijdering van zijn account aangevraagd. Neem a.u.b. de benodigde acties."
+    "Request account deletion" : "Verwijdering van account aanvragen "
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }

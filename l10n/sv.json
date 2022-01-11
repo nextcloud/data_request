@@ -13,8 +13,6 @@
     "Account" : "Konto",
     "You can request an export of your data or account deletion from the system administrator. This can take up to 30 days." : "Du kan begära export av din data eller radering av ditt konto från systemadministratören. Detta kan ta upp till 30 dagar.",
     "Request data export" : "Begär export av data",
-    "Request account deletion" : "Begär att radera ditt konto",
-    "The user %s, identified by user id \"%s\", has requested an export of his personal data. Please take action accordingly." : "Användaren %s, med användar-id \"%s\" har begärt export av sina användardata. Vänligen vidta åtgärder i enlighet med detta.",
-    "The user %s, identified by user id \"%s\", has requested to delete the account. Please take action accordingly." : "Användare %s, med användar-id \"%s\", har begärt radering av sitt konto. Utför nödvändiga åtgärder snarast."
+    "Request account deletion" : "Begär att radera ditt konto"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }

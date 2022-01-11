@@ -15,8 +15,6 @@ OC.L10N.register(
     "Account" : "Hesap",
     "You can request an export of your data or account deletion from the system administrator. This can take up to 30 days." : "BT yöneticisinden verilerinizin dışa aktarılmasını ya da hesabınızın silinmesini isteyebilirsiniz. Bu işlemin tamamlanması 30 gün sürebilir.",
     "Request data export" : "Verilerin dışa aktarılmasını isteyin",
-    "Request account deletion" : "Hesabınızın silinmesini isteyin",
-    "The user %s, identified by user id \"%s\", has requested an export of his personal data. Please take action accordingly." : "%s kullanıcısı (\"%s\" kodlu), kişisel verilerini dışa aktarma isteğinde bulundu. Lütfen gerekli işlemleri yapın.",
-    "The user %s, identified by user id \"%s\", has requested to delete the account. Please take action accordingly." : "%s kullanıcısı (%s kodlu), hesabının silinmesi isteğinde bulundu. Lütfen gerekli işlemleri yapın."
+    "Request account deletion" : "Hesabınızın silinmesini isteyin"
 },
 "nplurals=2; plural=(n > 1);");

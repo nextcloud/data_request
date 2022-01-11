@@ -15,8 +15,6 @@ OC.L10N.register(
     "Account" : "アカウント",
     "You can request an export of your data or account deletion from the system administrator. This can take up to 30 days." : "データのエクスポートまたはアカウントの削除は、システム管理者に要求できます。 これには最大30日かかります。",
     "Request data export" : "リクエストデータのエクスポート",
-    "Request account deletion" : "アカウントの削除をリクエストする",
-    "The user %s, identified by user id \"%s\", has requested an export of his personal data. Please take action accordingly." : "ユーザーID \"%s\"で識別されるユーザー%sは、自分のアカウントのエクスポートを要求しました。 適切に対処してください。",
-    "The user %s, identified by user id \"%s\", has requested to delete the account. Please take action accordingly." : "ユーザーID \"%s\"で識別されるユーザー%sは、自分のアカウントの削除を要求しました。 適切に対処してください。"
+    "Request account deletion" : "アカウントの削除をリクエストする"
 },
 "nplurals=1; plural=0;");
