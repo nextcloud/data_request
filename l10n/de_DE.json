@@ -13,8 +13,6 @@
     "Account" : "Konto",
     "You can request an export of your data or account deletion from the system administrator. This can take up to 30 days." : "Sie können einen Export Ihrer Daten oder die Konto-Löschung beim System-Administrator anfordern. Das kann bis zu 30 Tage dauern.",
     "Request data export" : "Daten-Export anfordern",
-    "Request account deletion" : "Kontolöschung anfordern",
-    "The user %s, identified by user id \"%s\", has requested an export of his personal data. Please take action accordingly." : "Der Benutzer %s, identifiziert durch die Benutzer-ID \"%s\", hat einen Export seiner persönlichen Daten angefordert. Bitte handeln Sie entsprechend.",
-    "The user %s, identified by user id \"%s\", has requested to delete the account. Please take action accordingly." : "Der Benutzer %s, identifiziert durch die Benutzer-ID \"%s\", hat eine Löschung seines Kontos angefordert. Bitte handeln Sie entsprechend."
+    "Request account deletion" : "Kontolöschung anfordern"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }

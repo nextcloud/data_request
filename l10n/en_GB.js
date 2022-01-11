@@ -15,8 +15,6 @@ OC.L10N.register(
     "Account" : "Account",
     "You can request an export of your data or account deletion from the system administrator. This can take up to 30 days." : "You can request an export of your data or account deletion from the system administrator. This can take up to 30 days.",
     "Request data export" : "Request data export",
-    "Request account deletion" : "Request account deletion",
-    "The user %s, identified by user id \"%s\", has requested an export of his personal data. Please take action accordingly." : "The user %s, identified by user id \"%s\", has requested an export of his personal data. Please take action accordingly.",
-    "The user %s, identified by user id \"%s\", has requested to delete the account. Please take action accordingly." : "The user %s, identified by user id \"%s\", has requested to delete the account. Please take action accordingly."
+    "Request account deletion" : "Request account deletion"
 },
 "nplurals=2; plural=(n != 1);");

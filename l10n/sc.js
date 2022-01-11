@@ -15,8 +15,6 @@ OC.L10N.register(
     "Account" : "Contu",
     "You can request an export of your data or account deletion from the system administrator. This can take up to 30 days." : "Podes rechèdere de esportare is datos tuos o cantzellare su contu dae s'amministratzione de sistema. Diant podere serbire finas a 30 dies.",
     "Request data export" : "Rechede de esportare is datos",
-    "Request account deletion" : "Rechede de cantzellare su contu",
-    "The user %s, identified by user id \"%s\", has requested an export of his personal data. Please take action accordingly." : "S'utente %s, chi tenet a id utente\"%s\", at rechestu de esportare is datos personales suos. Tene·ddu in contu.",
-    "The user %s, identified by user id \"%s\", has requested to delete the account. Please take action accordingly." : "S'utente %s, chi tenet a id utente\"%s\", at rechestu de cantzellare su contu. Tene·ddu in contu."
+    "Request account deletion" : "Rechede de cantzellare su contu"
 },
 "nplurals=2; plural=(n != 1);");

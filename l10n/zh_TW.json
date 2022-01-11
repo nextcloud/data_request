@@ -13,8 +13,6 @@
     "Account" : "帳戶",
     "You can request an export of your data or account deletion from the system administrator. This can take up to 30 days." : "您可以要求系統管理員匯出資料或刪除帳號。需時可達 30 天。",
     "Request data export" : "請求匯出資料",
-    "Request account deletion" : "請求刪除帳號",
-    "The user %s, identified by user id \"%s\", has requested an export of his personal data. Please take action accordingly." : "用戶 %s（用戶 ID \"%s\"）已請求匯出其個人資料。請採取相對的措施。",
-    "The user %s, identified by user id \"%s\", has requested to delete the account. Please take action accordingly." : "用戶 %s（ID “%s”）已請求刪除其帳號。請採取相對的措施。"
+    "Request account deletion" : "請求刪除帳號"
 },"pluralForm" :"nplurals=1; plural=0;"
 }

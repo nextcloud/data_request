@@ -13,8 +13,6 @@
     "Account" : "账号",
     "You can request an export of your data or account deletion from the system administrator. This can take up to 30 days." : "您可以向管理员申请导出数据或删除账号。这可能需要长达 30 天。",
     "Request data export" : "请求导出数据",
-    "Request account deletion" : "请求删除账号",
-    "The user %s, identified by user id \"%s\", has requested an export of his personal data. Please take action accordingly." : "由用户ID“%s”标识的用户%s请求导出其个人数据。 请采取相应措施。",
-    "The user %s, identified by user id \"%s\", has requested to delete the account. Please take action accordingly." : "由用户ID “%s” 标识的用户 %s 请求删除其账号。 请采取相应措施。"
+    "Request account deletion" : "请求删除账号"
 },"pluralForm" :"nplurals=1; plural=0;"
 }
