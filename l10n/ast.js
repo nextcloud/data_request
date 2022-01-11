@@ -8,8 +8,6 @@ OC.L10N.register(
     "Account deletion request" : "Solicitú de desaniciu de cuenta",
     "No administrator has set an email address" : "Dengún alministrador afitó una direción de corréu",
     "Data Request" : "Solicitú de datos",
-    "Account" : "Cuenta",
-    "The user %s, identified by user id \"%s\", has requested an export of his personal data. Please take action accordingly." : "L'usuariu %s, identificáu pola ID «%s», solicitó una esportación de los sos datos personales. Actúa en consecuencia, por favor.",
-    "The user %s, identified by user id \"%s\", has requested to delete the account. Please take action accordingly." : "L'usuariu %s, identificáu pola ID «%s», solicitó'l desaniciu de la so cuenta. Actúa en consecuencia, por favor."
+    "Account" : "Cuenta"
 },
 "nplurals=2; plural=(n != 1);");

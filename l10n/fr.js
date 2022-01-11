@@ -15,8 +15,6 @@ OC.L10N.register(
     "Account" : "Compte",
     "You can request an export of your data or account deletion from the system administrator. This can take up to 30 days." : "Vous pouvez demander un export de vos données ou la suppression de votre compte à l'administrateur du système. Ceci peut prendre jusqu'à 30 jours.",
     "Request data export" : "Demander l'export de données",
-    "Request account deletion" : "Demander la suppression d'un compte",
-    "The user %s, identified by user id \"%s\", has requested an export of his personal data. Please take action accordingly." : "L'utilisateur %s, portant l'identifiant \"%s\", a demandé un export de ses données personnelles. Merci de bien vouloir agir en conséquence.",
-    "The user %s, identified by user id \"%s\", has requested to delete the account. Please take action accordingly." : "L'utilisateur·ice %s, portant l'identifiant \"%s\", a demandé la suppression de son compte. Merci de bien vouloir agir en conséquence."
+    "Request account deletion" : "Demander la suppression d'un compte"
 },
 "nplurals=2; plural=(n > 1);");

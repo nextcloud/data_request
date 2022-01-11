@@ -15,8 +15,6 @@ OC.L10N.register(
     "Account" : "Kontua",
     "You can request an export of your data or account deletion from the system administrator. This can take up to 30 days." : "Zure datuak esportatzea edo zure kontua ezabatzea eskatu diezaiokezu sistemaren kudeatzaileari. Honek 30 egun har ditzake",
     "Request data export" : "Eskatu datuen esportazioa",
-    "Request account deletion" : "Eskatu kontuaren ezabaketa",
-    "The user %s, identified by user id \"%s\", has requested an export of his personal data. Please take action accordingly." : "%s erabiltzaileak, \"%s\" erabiltzaile ida duenak, bere datu-pertsonalak esportatzeko eskaera egin da. Behar bezala egin ezazu.",
-    "The user %s, identified by user id \"%s\", has requested to delete the account. Please take action accordingly." : "%s erabiltzaileak, \"%s\" ida duenak, bere kontua ezabatzeko eskatu du. Behar ezala egin ezazu."
+    "Request account deletion" : "Eskatu kontuaren ezabaketa"
 },
 "nplurals=2; plural=(n != 1);");

@@ -12,8 +12,6 @@
     "Account" : "Tili",
     "You can request an export of your data or account deletion from the system administrator. This can take up to 30 days." : "Voit pyytää tietojesi viemistä tai tilin poistamista järjestelmän ylläpitäjiltä. Toimenpiteessä voi kestää 30 päivää.",
     "Request data export" : "Pyydän tietojen vientiä",
-    "Request account deletion" : "Pyydä tilin poistoa",
-    "The user %s, identified by user id \"%s\", has requested an export of his personal data. Please take action accordingly." : "Käyttäjä %s, jonka tunniste on \"%s\", on pyytänyt henkilökohtaisten tietojensa vientiä. Toimithan pyynnön mukaisesti.",
-    "The user %s, identified by user id \"%s\", has requested to delete the account. Please take action accordingly." : "Käyttäjä %s, jonka tunniste on \"%s\", on pyytänyt tilinsä poistamista. Toimithan pyynnön mukaisesti."
+    "Request account deletion" : "Pyydä tilin poistoa"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }
