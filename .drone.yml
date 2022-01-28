@@ -33,37 +33,6 @@ trigger:
     - push
 
 type: docker
----
-kind: pipeline
-name: unit-sqlite-php7.3
-
-steps:
-  - name: sqlite-php7.3
-    image: nextcloudci/php7.3:php7.3-5
-    environment:
-      APP_NAME: data_request
-      CORE_BRANCH: master
-      DATABASEHOST: sqlite
-    commands:
-      - wget https://raw.githubusercontent.com/nextcloud/travis_ci/master/before_install.sh
-      - bash ./before_install.sh $APP_NAME $CORE_BRANCH $DATABASEHOST
-      - cd ../server
-      - ./occ app:enable $APP_NAME
-      - cd apps/$APP_NAME
-
-      # Run phpunit tests
-      - cd tests/unit/
-      - phpunit --configuration phpunit.xml
-
-trigger:
-  branch:
-    - master
-    - stable*
-  event:
-    - pull_request
-    - push
-
-type: docker
 
 ---
 kind: pipeline
