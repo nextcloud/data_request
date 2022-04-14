@@ -31,17 +31,15 @@ use OCP\AppFramework\OCSController;
 use OCP\IRequest;
 
 class DataRequestController extends OCSController {
-
-	/** @var Request */
-	private $dataRequest;
+	private Request $dataRequest;
 
 	public function __construct(
-		$appName,
+		string $appName,
 		IRequest $request,
 		Request $dataRequest,
-		$corsMethods = 'PUT, POST, GET, DELETE, PATCH',
-		$corsAllowedHeaders = 'Authorization, Content-Type, Accept',
-		$corsMaxAge = 1728000
+		string $corsMethods = 'PUT, POST, GET, DELETE, PATCH',
+		string $corsAllowedHeaders = 'Authorization, Content-Type, Accept',
+		int $corsMaxAge = 1728000
 	) {
 		parent::__construct($appName, $request, $corsMethods, $corsAllowedHeaders, $corsMaxAge);
 		$this->dataRequest = $dataRequest;
@@ -51,8 +49,8 @@ class DataRequestController extends OCSController {
 	 * @NoAdminRequired
 	 * @PasswordConfirmationRequired
 	 */
-	public function export() {
-		return $this->processRequest(function () {
+	public function export(): DataResponse {
+		return $this->processRequest(function (): void {
 			$this->dataRequest->sendExportRequest();
 		});
 	}
@@ -61,13 +59,13 @@ class DataRequestController extends OCSController {
 	 * @NoAdminRequired
 	 * @PasswordConfirmationRequired
 	 */
-	public function deletion() {
-		return $this->processRequest(function () {
+	public function deletion(): DataResponse {
+		return $this->processRequest(function (): void {
 			$this->dataRequest->sendDeleteRequest();
 		});
 	}
 
-	protected function processRequest(callable $serviceMethod) {
+	protected function processRequest(callable $serviceMethod): DataResponse {
 		try {
 			$serviceMethod();
 			return new DataResponse();
