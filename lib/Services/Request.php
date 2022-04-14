@@ -36,22 +36,14 @@ use OCP\Mail\IMailer;
 use OCP\Util;
 
 class Request {
-	/** @var string */
-	protected $defaultLanguage;
-	/** @var IGroupManager */
-	private $groupManager;
-	/** @var IMailer */
-	private $mailer;
-	/** @var IFactory */
-	private $l10nFactory;
-	/** @var IConfig */
-	private $config;
-	/** @var IUser */
-	private $requester;
-	/** @var IL10N */
-	private $l;
-	/** @var Defaults */
-	private $defaults;
+	protected ?string $defaultLanguage = null;
+	private IGroupManager $groupManager;
+	private IMailer $mailer;
+	private IFactory $l10nFactory;
+	private IConfig $config;
+	private IUser $requester;
+	private IL10N $l;
+	private Defaults $defaults;
 
 	public function __construct(
 		IGroupManager $groupManager,
@@ -71,19 +63,19 @@ class Request {
 		$this->defaults = $defaults;
 	}
 
-	public function sendExportRequest() {
-		$this->sendRequest(function (IUser $r) {
+	public function sendExportRequest(): void {
+		$this->sendRequest(function (IUser $r): IEMailTemplate {
 			return $this->getExportTemplate($r);
 		});
 	}
 
-	public function sendDeleteRequest() {
-		$this->sendRequest(function (IUser $r) {
+	public function sendDeleteRequest(): void {
+		$this->sendRequest(function (IUser $r): IEMailTemplate {
 			return $this->getDeletionTemplate($r);
 		});
 	}
 
-	protected function sendRequest(callable $templateGenerator) {
+	protected function sendRequest(callable $templateGenerator): void {
 		$admins = $this->getAdmins();
 
 		$oneMailSent = false;
@@ -101,22 +93,25 @@ class Request {
 		}
 	}
 
-	protected function getDefaultLang() {
+	protected function getDefaultLang(): string {
 		if ($this->defaultLanguage === null) {
 			$this->defaultLanguage = $this->config->getSystemValue('default_language', 'en');
 		}
 		return $this->defaultLanguage;
 	}
 
-	protected function craftEmailTo(IUser $admin, IEMailTemplate $template) {
+	protected function craftEmailTo(IUser $admin, IEMailTemplate $template): bool {
 		$senderAddress = Util::getDefaultEmailAddress('no-reply');
 		$senderName = $this->defaults->getName();
 
+		$adminEmail = $admin->getEMailAddress();
+		if (!$adminEmail) {
+			return false;
+		}
+
 		$message = $this->mailer->createMessage();
-		$message->setTo([$admin->getEMailAddress() => $admin->getDisplayName()]);
-		$message->setSubject($template->renderSubject());
-		$message->setHtmlBody($template->renderHtml());
-		$message->setPlainBody($template->renderText());
+		$message->setTo([$adminEmail => $admin->getDisplayName()]);
+		$message->useTemplate($template);
 		$message->setFrom([$senderAddress => $senderName]);
 
 		try {
@@ -131,7 +126,7 @@ class Request {
 		return true;
 	}
 
-	protected function getExportTemplate(IUser $admin) {
+	protected function getExportTemplate(IUser $admin): IEMailTemplate {
 		$l = $this->l10nFactory->get('data_request', $this->config->getUserValue($admin->getUID(), 'core', 'lang', $this->getDefaultLang()));
 		$template = $this->mailer->createEMailTemplate('data_request.Export', []);
 
@@ -146,7 +141,7 @@ class Request {
 		return $template;
 	}
 
-	protected function getDeletionTemplate(IUser $admin) {
+	protected function getDeletionTemplate(IUser $admin): IEMailTemplate {
 		$l = $this->l10nFactory->get('data_request', $this->config->getUserValue($admin->getUID(), 'core', 'lang', $this->getDefaultLang()));
 		$template = $this->mailer->createEMailTemplate('data_request.Deletion', []);
 
@@ -161,7 +156,7 @@ class Request {
 		return $template;
 	}
 
-	protected function getAdmins() {
+	protected function getAdmins(): array {
 		$admins = $this->groupManager->get('admin')->searchUsers('');
 		$admins = array_filter($admins, function (IUser $admin) {
 			return $admin->getEMailAddress() !== null;

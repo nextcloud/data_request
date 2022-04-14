@@ -48,8 +48,7 @@ class RequestTest extends \Test\TestCase {
 	protected $session;
 	/** @var IL10N|PHPUnit_Framework_MockObject_MockObject */
 	protected $l;
-	/** @var Request */
-	protected $service;
+	protected Request $service;
 	/** @var IUser|PHPUnit_Framework_MockObject_MockObject */
 	protected $user;
 	/** @var Defaults|PHPUnit_Framework_MockObject_MockObject */
@@ -254,23 +253,13 @@ class RequestTest extends \Test\TestCase {
 			->willReturn($adminName);
 
 		$template = $this->createMock(IEMailTemplate::class);
-		$template->expects($this->once())
-			->method('renderSubject');
-		$template->expects($this->once())
-			->method('renderHtml');
-		$template->expects($this->once())
-			->method('renderText');
-
 		$message = $this->createMock(\OC\Mail\Message::class);
 		$message->expects($this->once())
 			->method('setTo')
 			->with([$adminMail => $adminName]);
 		$message->expects($this->once())
-			->method('setSubject');
-		$message->expects($this->once())
-			->method('setHtmlBody');
-		$message->expects($this->once())
-			->method('setPlainBody');
+			->method('useTemplate')
+			->with($template);
 		$message->expects($this->once())
 			->method('setFrom');
 

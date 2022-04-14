@@ -26,16 +26,14 @@ namespace OCA\DataRequest\Exceptions;
 use Throwable;
 
 class HintedRuntime extends \RuntimeException {
+	protected string $hint;
 
-	/** @var string */
-	protected $hint;
-
-	public function __construct($message = '', $hint = '', $code = 0, Throwable $previous = null) {
+	public function __construct(string $message = '', string $hint = '', int $code = 0, Throwable $previous = null) {
 		parent::__construct($message, $code, $previous);
 		$this->hint = $hint;
 	}
 
-	public function getHint() {
+	public function getHint(): string {
 		if (empty($this->hint)) {
 			return $this->message;
 		}
