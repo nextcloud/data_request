@@ -72,11 +72,15 @@ class Request {
 	}
 
 	public function sendExportRequest() {
-		$this->sendRequest(function (IUser $r) {return $this->getExportTemplate($r); });
+		$this->sendRequest(function (IUser $r) {
+			return $this->getExportTemplate($r);
+		});
 	}
 
 	public function sendDeleteRequest() {
-		$this->sendRequest(function (IUser $r) {return $this->getDeletionTemplate($r); });
+		$this->sendRequest(function (IUser $r) {
+			return $this->getDeletionTemplate($r);
+		});
 	}
 
 	protected function sendRequest(callable $templateGenerator) {
@@ -85,21 +89,20 @@ class Request {
 		$oneMailSent = false;
 		foreach ($admins as $admin) {
 			$template = $templateGenerator($admin);
-			if($this->craftEmailTo($admin, $template) === true) {
+			if ($this->craftEmailTo($admin, $template) === true) {
 				$oneMailSent = true;
 			}
 		}
-		if(!$oneMailSent) {
+		if (!$oneMailSent) {
 			throw new HintedRuntime(
 				'No mail was sent successfully',
 				$this->l->t('No administrator could have been contacted.')
 			);
 		}
-
 	}
 
 	protected function getDefaultLang() {
-		if($this->defaultLanguage === null) {
+		if ($this->defaultLanguage === null) {
 			$this->defaultLanguage = $this->config->getSystemValue('default_language', 'en');
 		}
 		return $this->defaultLanguage;
@@ -110,7 +113,7 @@ class Request {
 		$senderName = $this->defaults->getName();
 
 		$message = $this->mailer->createMessage();
-		$message->setTo([$admin->getEMailAddress () => $admin->getDisplayName()]);
+		$message->setTo([$admin->getEMailAddress() => $admin->getDisplayName()]);
 		$message->setSubject($template->renderSubject());
 		$message->setHtmlBody($template->renderHtml());
 		$message->setPlainBody($template->renderText());
@@ -118,7 +121,7 @@ class Request {
 
 		try {
 			$failedRecipients = $this->mailer->send($message);
-			if(count($failedRecipients) > 0) {
+			if (count($failedRecipients) > 0) {
 				return false;
 			}
 		} catch (\Exception $e) {
@@ -135,7 +138,7 @@ class Request {
 		$template->setSubject($l->t('Personal data export request'));
 
 		$template->addHeader();
-		$template->addHeading($l->t('Hello %s,',[$admin->getDisplayName()]));
+		$template->addHeading($l->t('Hello %s,', [$admin->getDisplayName()]));
 		$template->addBodyText($l->t('The user %s, identified by user id "%s", has requested an export of their personal data. Please take action accordingly.', [$this->requester->getDisplayName(), $this->requester->getUID()]));
 
 		$template->addFooter();
@@ -150,7 +153,7 @@ class Request {
 		$template->setSubject($l->t('Account deletion request'));
 
 		$template->addHeader();
-		$template->addHeading($l->t('Hello %s,',[$admin->getDisplayName()]));
+		$template->addHeading($l->t('Hello %s,', [$admin->getDisplayName()]));
 		$template->addBodyText($l->t('The user %s, identified by user id "%s", has requested to delete their account. Please take action accordingly.', [$this->requester->getDisplayName(), $this->requester->getUID()]));
 
 		$template->addFooter();
@@ -160,10 +163,10 @@ class Request {
 
 	protected function getAdmins() {
 		$admins = $this->groupManager->get('admin')->searchUsers('');
-		$admins = array_filter($admins, function(IUser $admin) {
+		$admins = array_filter($admins, function (IUser $admin) {
 			return $admin->getEMailAddress() !== null;
 		});
-		if(empty($admins)) {
+		if (empty($admins)) {
 			throw new HintedRuntime(
 				'No admin has entered an email address',
 				$this->l->t('No administrator has set an email address')
