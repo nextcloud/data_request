@@ -41,5 +41,4 @@ class HintedRuntime extends \RuntimeException {
 		}
 		return $this->hint;
 	}
-
 }

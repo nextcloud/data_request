@@ -90,7 +90,7 @@ class DataRequestControllerTest extends \Test\TestCase {
 		$mocker = $this->requestService->expects($this->once())
 			->method($serviceMethod);
 
-		if($causeException) {
+		if ($causeException) {
 			/** @var HintedRuntime|\PHPUnit_Framework_MockObject_MockObject $exception */
 			$exception = $this->createMock(HintedRuntime::class);
 			$exception->expects($this->once())
@@ -100,7 +100,7 @@ class DataRequestControllerTest extends \Test\TestCase {
 			$mocker->willThrowException($exception);
 		}
 
-		switch($serviceMethod) {
+		switch ($serviceMethod) {
 			case 'sendExportRequest':
 				$response = $this->controller->export();
 				break;
@@ -113,7 +113,7 @@ class DataRequestControllerTest extends \Test\TestCase {
 
 		$this->assertInstanceOf(DataResponse::class, $response);
 		$this->assertSame($expectStatus, $response->getStatus());
-		if($expectStatus >= 500) {
+		if ($expectStatus >= 500) {
 			$this->assertSame('Some hint', $response->getData()['error']);
 		}
 	}

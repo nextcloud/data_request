@@ -214,7 +214,7 @@ class RequestTest extends \Test\TestCase {
 			->with('admin')
 			->willReturn($adminGroup);
 
-		if($adminsWithEmail === 0) {
+		if ($adminsWithEmail === 0) {
 			$this->expectException(HintedRuntime::class);
 		}
 		$result = $this->invokePrivate($this->service, 'getAdmins');
@@ -281,7 +281,7 @@ class RequestTest extends \Test\TestCase {
 		$sendMocker = $this->mailer->expects($this->once())
 			->method('send')
 			->with($message);
-		if($sendThrowsException) {
+		if ($sendThrowsException) {
 			$sendMocker->willThrowException(new \Exception('Expected Exception'));
 		} else {
 			$sendMocker->willReturn($sendResult);
