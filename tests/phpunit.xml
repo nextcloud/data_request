@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <phpunit bootstrap="bootstrap.php"
-		 strict="true"
 		 verbose="true"
+		 convertDeprecationsToExceptions="true"
 		 timeoutForSmallTests="900"
 		 timeoutForMediumTests="900"
 		 timeoutForLargeTests="900"
 >
 	<testsuite name='Data Request App Tests'>
-		<directory>./tests/unit</directory>
+		<directory>./unit</directory>
 	</testsuite>
 	<!-- filters for code coverage -->
 	<filter>
 		<whitelist>
-			<directory suffix=".php">./appinfo</directory>
-			<directory suffix=".php">./lib</directory>
+			<directory suffix=".php">../appinfo</directory>
+			<directory suffix=".php">../lib</directory>
 		</whitelist>
 	</filter>
 	<logging>
