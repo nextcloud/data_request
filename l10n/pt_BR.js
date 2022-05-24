@@ -17,4 +17,4 @@ OC.L10N.register(
     "Request data export" : "Solicitar a exportação de dados",
     "Request account deletion" : "Solicitar a exclusão da conta"
 },
-"nplurals=2; plural=(n > 1);");
+"nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;");

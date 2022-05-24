@@ -12,5 +12,5 @@
     "You can request an export of your data or account deletion from the system administrator. This can take up to 30 days." : "Pode solicitar uma exportação dos seus dados ou a eliminação da conta via administrador do sistema. Isto pode demorar até 30 dias.",
     "Request data export" : "Solicitar exportação de dados",
     "Request account deletion" : "Solicitar eliminação da conta"
-},"pluralForm" :"nplurals=2; plural=(n != 1);"
+},"pluralForm" :"nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;"
 }
