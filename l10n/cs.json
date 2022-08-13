@@ -2,7 +2,7 @@
     "sent!" : "odesláno",
     "No administrator could have been contacted." : "Nepodařilo se kontaktovat žádného ze správců.",
     "Personal data export request" : "Požadavek na export osobních dat",
-    "Hello %s," : "Zdravíme %s,",
+    "Hello %s," : "Dobrý den %s,",
     "The user %s, identified by user id \"%s\", has requested an export of their personal data. Please take action accordingly." : "Uživatel %s, určený identifikátorem uživatele „%s“, si vyžádal export svých osobních dat. Příslušně zareagujte.",
     "Account deletion request" : "Požadavek na smazání účtu",
     "The user %s, identified by user id \"%s\", has requested to delete their account. Please take action accordingly." : "Uživatel %s, určený identifikátorem uživatele „%s“, si vyžádal smazání účtu. Příslušně zareagujte.",
