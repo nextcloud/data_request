@@ -10,6 +10,7 @@
     <author mail="blizzz@arthur-schiwon.de" homepage="https://nextcloud.com">Arthur Schiwon</author>
     <namespace>DataRequest</namespace>
     <category>tools</category>
+    <website>https://github.com/nextcloud/data_request</website>
     <bugs>https://github.com/nextcloud/data_request/issues</bugs>
     <repository type="git">https://github.com/nextcloud/data_request.git</repository>
     <screenshot>https://raw.githubusercontent.com/nextcloud/data_request/master/screenshots/personal-settings.png</screenshot>
