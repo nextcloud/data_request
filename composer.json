@@ -1,5 +1,6 @@
 {
     "require-dev": {
-        "php-parallel-lint/php-parallel-lint": "^1.2"
+        "php-parallel-lint/php-parallel-lint": "^1.2",
+        "nextcloud/ocp": "dev-stable23"
     }
 }
