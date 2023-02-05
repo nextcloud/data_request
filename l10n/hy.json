@@ -1,0 +1,4 @@
+{ "translations": {
+    "Hello %s," : "Բարև %s,"
+},"pluralForm" :"nplurals=2; plural=(n != 1);"
+}
