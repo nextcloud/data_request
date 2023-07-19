@@ -1,7 +1,20 @@
 OC.L10N.register(
     "data_request",
     {
+    "sent!" : "¡enviado!",
+    "No administrator could have been contacted." : "No se pudo contactar a ningún administrador.",
+    "Personal data export request" : "Solicitud de exportación de datos personales",
     "Hello %s," : "Hola %s,",
-    "Account" : "Cuenta"
+    "The user %s, identified by user id \"%s\", has requested an export of their personal data. Please take action accordingly." : "El usuario %s, identificado por el ID de usuario \"%s\", ha solicitado exportar sus datos personales. Por favor, tome las medidas correspondientes.",
+    "Account deletion request" : "Solicitud de eliminación de cuenta",
+    "The user %s, identified by user id \"%s\", has requested to delete their account. Please take action accordingly." : "El usuario %s, identificado por el ID de usuario \"%s\", ha solicitado eliminar su cuenta. Por favor, tome las medidas correspondientes.",
+    "No administrator has set an email address" : "Ningún administrador ha configurado una dirección de correo electrónico",
+    "Data Request" : "Solicitud de datos",
+    "Request your data from the admins" : "Solicite sus datos a los administradores",
+    "Enable your users to request an export or deletion of their data. According options are added to the personal settings section. Administrators will be notified by email about the request." : "Habilite a sus usuarios para solicitar la exportación o eliminación de sus datos. Las opciones correspondientes se agregarán a la sección de configuración personal. Los administradores serán notificados por correo electrónico sobre la solicitud.",
+    "Account" : "Cuenta",
+    "You can request an export of your data or account deletion from the system administrator. This can take up to 30 days." : "Puede solicitar la exportación de sus datos o la eliminación de su cuenta al administrador del sistema. Esto puede demorar hasta 30 días.",
+    "Request data export" : "Solicitar exportación de datos",
+    "Request account deletion" : "Solicitar eliminación de cuenta"
 },
 "nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;");
