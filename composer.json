@@ -5,7 +5,7 @@
 		"optimize-autoloader": true,
 		"classmap-authoritative": true,
 		"platform": {
-			"php": "8.0"
+			"php": "8.0.2"
 		}
 	},
 	"scripts": {
@@ -22,7 +22,7 @@
 		"phpunit/phpunit": "^9.5",
 		"nextcloud/coding-standard": "^1.0.0",
 		"vimeo/psalm": "^4.22.0",
-		"nextcloud/ocp": "dev-master"
+		"nextcloud/ocp": "dev-stable28"
 	},
 	"autoload-dev": {
 		"psr-4": {
