@@ -1,5 +1,6 @@
 { "translations": {
     "Hello %s," : "Halo %s,",
-    "Account" : "Akun"
+    "Account" : "Akun",
+    "Request account deletion" : "Minta penghapusan akun"
 },"pluralForm" :"nplurals=1; plural=0;"
 }
