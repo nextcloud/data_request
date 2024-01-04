@@ -1,0 +1,6 @@
+{ "translations": {
+    "Hello %s," : "Hello %s,",
+    "Account" : "Account",
+    "Request account deletion" : "Request account deletion"
+},"pluralForm" :"nplurals=2; plural=(n!=1);"
+}
