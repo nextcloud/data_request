@@ -17,8 +17,8 @@ export default defineConfig({
 					return ip
 				})
 				.then(waitOnNextcloud)
-				// configure Nextcloud, also install and enable the `viewer` app
-				.then(() => configureNextcloud(['viewer', 'data_request']))
+				// configure Nextcloud, also enable the app
+				.then(() => configureNextcloud(['data_request']))
 				.then(() => {
 					return config
 				})
