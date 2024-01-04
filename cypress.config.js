@@ -6,7 +6,9 @@ export default defineConfig({
 		setupNodeEvents(on, config) {
 			// Remove container after run
 			on('after:run', () => {
-				stopNextcloud()
+				if (!process.env.CI) {
+					stopNextcloud()
+				}
 			})
 
 			// starting Nextcloud testing container with specified server branch
