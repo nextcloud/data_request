@@ -83,12 +83,12 @@ endif
 
 # Installs npm dependencies
 .PHONY: npm
-npm:
-ifeq (,$(wildcard $(CURDIR)/package.json))
-	cd js && $(npm) run build
-else
-	npm run build
-endif
+npm: node_modules
+	npm install
+
+# Install from scratch
+node_modules:
+	npm ci
 
 # Removes the appstore build
 .PHONY: clean
@@ -152,6 +152,5 @@ appstore:
 	--exclude="../$(app_name)/js/.*" \
 
 .PHONY: test
-test: composer
-	$(CURDIR)/vendor/phpunit/phpunit/phpunit -c phpunit.xml
-	$(CURDIR)/vendor/phpunit/phpunit/phpunit -c phpunit.integration.xml
+test: npm
+	npm run test

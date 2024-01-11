@@ -1,0 +1,35 @@
+{
+  "name": "data_request",
+  "version": "1.16.0",
+  "description": "Test script for the Nextcloud data_request app",
+  "main": "init.js",
+  "directories": {
+    "lib": "js",
+    "test": "cypress"
+  },
+  "scripts": {
+    "test": "cypress run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nextcloud/data_request.git"
+  },
+  "keywords": [
+    "nextcloud",
+    "app",
+    "data",
+    "request",
+    "gdpr",
+    "dsgvo"
+  ],
+  "author": "Arthur Schiwon",
+  "license": "AGPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/nextcloud/data_request/issues"
+  },
+  "homepage": "https://github.com/nextcloud/data_request#readme",
+  "devDependencies": {
+    "@nextcloud/cypress": "^1.0.0-beta.6",
+    "cypress": "^13.6.2"
+  }
+}
