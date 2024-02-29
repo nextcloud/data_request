@@ -4,6 +4,7 @@
     "Personal data export request" : "개인 데이터 내보내기 요청",
     "Hello %s," : "안녕하세요 %s 님,",
     "Account deletion request" : "계정 삭제 요청",
+    "The user %s, identified by user id \"%s\", has requested to delete their account. Please take action accordingly." : "사용자 %s(사용자 ID \"%s\")님이 계정 삭제를 요청했습니다. 요청을 처리해 주십시오.",
     "No administrator has set an email address" : "이메일 주소를 설정한 관리자 없음",
     "Data Request" : "데이터 요청",
     "Request your data from the admins" : "관리자에게 내 데이터 요청",
