@@ -14,5 +14,5 @@
     "You can request an export of your data or account deletion from the system administrator. This can take up to 30 days." : "ניתן לבקש ייצוא של הנתונים שלך או את מחיקת החשבון שלך מהמערכת ממנהל מערכת. פעולה זו יכולה לארוך עד 30 ימים.",
     "Request data export" : "בקשת ייצוא נתונים",
     "Request account deletion" : "בקשת מחיקת חשבון"
-},"pluralForm" :"nplurals=3; plural=(n == 1 && n % 1 == 0) ? 0 : (n == 2 && n % 1 == 0) ? 1: (n % 10 == 0 && n % 1 == 0 && n > 10) ? 2 : 3;"
+},"pluralForm" :"nplurals=3; plural=(n == 1 && n % 1 == 0) ? 0 : (n == 2 && n % 1 == 0) ? 1: 2;"
 }
