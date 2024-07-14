@@ -6,7 +6,7 @@
     "The user %s, identified by user id \"%s\", has requested an export of their personal data. Please take action accordingly." : "O usuario %s, identificado polo ID de usuario «%s», solicitou a exportación dos seus datos persoais. Actúe en consecuencia. ",
     "Account deletion request" : "Solicitude de eliminación da conta ",
     "The user %s, identified by user id \"%s\", has requested to delete their account. Please take action accordingly." : "O usuario %s, identificado polo ID de usuario «%s», solicitou a eliminación da súa conta. Actúe en consecuencia. ",
-    "No administrator has set an email address" : "Ningún administrador estabeleceu un enderezo de correo-e",
+    "No administrator has set an email address" : "Ningún administrador definiu un enderezo de correo-e",
     "Data Request" : "Solicitude de datos",
     "Request your data from the admins" : "Solicite os seus datos á administración da instancia",
     "Enable your users to request an export or deletion of their data. According options are added to the personal settings section. Administrators will be notified by email about the request." : "Permita que os seus usuarios soliciten unha exportación ou eliminación dos seus datos. As opcións correspondentes engádense á sección de axustes persoais. A administración será notificada por correo-e sobre a solicitude.",
