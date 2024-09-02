@@ -2,6 +2,9 @@
 #
 # https://github.com/nextcloud/.github
 # https://docs.github.com/en/actions/learn-github-actions/sharing-workflows-with-your-organization
+#
+# SPDX-FileCopyrightText: 2023-2024 Nextcloud GmbH and Nextcloud contributors
+# SPDX-License-Identifier: MIT
 
 name: Auto approve nextcloud/ocp
 
@@ -30,6 +33,12 @@ jobs:
       contents: write
 
     steps:
+      - name: Disabled on forks
+        if: ${{ github.event.pull_request.head.repo.full_name != github.repository }}
+        run: |
+          echo 'Can not approve PRs from forks'
+          exit 1
+
       - uses: mdecoleman/pr-branch-name@bab4c71506bcd299fb350af63bb8e53f2940a599 # v2.0.0
         id: branchname
         with:
