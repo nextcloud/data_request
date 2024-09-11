@@ -4,6 +4,21 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## 2.0.0 - 2024-09-11
+
+### Added
+
+- ✨ Support Nextcloud 30.
+
+### Changed
+
+- 🗣️ Update translations.
+- 🔌 Upgrade dependencies.
+
+### Removed
+
+- 🧹 Drop support for Nextcloud 29.
+
 ## 1.16.0 - 2024-09-11
 
 ### Added
