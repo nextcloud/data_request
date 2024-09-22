@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## 1.16.3 - 2024-09-22
+
+### Changed
+
+- ⬆️ Bump version number. Release again as last release had invalid signature.
+
 ## 1.16.2 - 2024-09-16
 
 ### Changed
