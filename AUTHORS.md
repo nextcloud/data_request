@@ -6,7 +6,7 @@
 
 - Andy Scherzinger <info@andy-scherzinger.de>
 - Arthur Schiwon <blizzz@arthur-schiwon.de>
-- Bernhard Posselt
+- Bernhard Posselt <dev@bernhard-posselt.com>
 - Carl Schwan <carl@carlschwan.eu>
 - Côme Chilliet <come.chilliet@nextcloud.com>
 - Gaspard d'Hautefeuille <github@dhautefeuille.eu>
