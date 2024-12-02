@@ -1,4 +1,5 @@
 <?php
+
 /**
  * SPDX-FileCopyrightText: 2018 Nextcloud GmbH and Nextcloud contributors
  * SPDX-License-Identifier: AGPL-3.0-or-later
@@ -11,7 +12,7 @@ use Throwable;
 class HintedRuntime extends \RuntimeException {
 	protected string $hint;
 
-	public function __construct(string $message = '', string $hint = '', int $code = 0, Throwable $previous = null) {
+	public function __construct(string $message = '', string $hint = '', int $code = 0, ?Throwable $previous = null) {
 		parent::__construct($message, $code, $previous);
 		$this->hint = $hint;
 	}
