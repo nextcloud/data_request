@@ -89,7 +89,7 @@ class Request {
 		$senderName = $this->defaults->getName();
 
 		$adminEmail = $admin->getEMailAddress();
-		if (!$adminEmail) {
+		if ($adminEmail === null || $adminEmail === '') {
 			return false;
 		}
 
@@ -141,7 +141,7 @@ class Request {
 	}
 
 	protected function getAdmins(): array {
-		$admins = $this->groupManager->get('admin')->searchUsers('');
+		$admins = $this->groupManager->get('admin')?->searchUsers('') ?? [];
 		$admins = array_filter($admins, function (IUser $admin) {
 			return $admin->getEMailAddress() !== null;
 		});
