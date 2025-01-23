@@ -1,6 +1,6 @@
 {
   "name": "data_request",
-  "version": "3.0.0-dev",
+  "version": "4.0.0-dev.0",
   "description": "Test script for the Nextcloud data_request app",
   "main": "init.js",
   "directories": {
