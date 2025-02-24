@@ -8,6 +8,25 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## 3.0.0 - 2025-02-24
+
+### Added
+
+- ✨ Support Nextcloud 31.
+- 🔌 Add reuse compliance.
+
+### Changed
+
+- 🗣️ Update translations.
+- 🔌 Upgrade dependencies.
+- 🔌 Updating cypress.yml workflow
+- 🔌 Use psr-log 3 compatible.
+- 🔌 Move dev tools to vendor-bin.
+
+### Removed
+
+- 🧹 Drop support for Nextcloud 30.
+
 ## 2.0.0 - 2024-09-11
 
 ### Added
