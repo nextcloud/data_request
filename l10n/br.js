@@ -4,7 +4,7 @@ OC.L10N.register(
     "sent!" : "kaset !",
     "No administrator could have been contacted." : "N'eo ket bet posupl kemenn merour ebet",
     "Personal data export request" : "Goulenn divroa roadennoù bersonnel",
-    "Hello %s," : "Demeger mat %s, ",
+    "Hello %s," : "Demat %s, ",
     "Account deletion request" : "Goulenn lemel kont",
     "No administrator has set an email address" : "Merour ebet en deus lakaet ur chom-lec'h postel",
     "Data Request" : "Goulenn Roadennoù",
