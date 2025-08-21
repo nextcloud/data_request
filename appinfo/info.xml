@@ -4,26 +4,26 @@
   - SPDX-License-Identifier: AGPL-3.0-or-later
 -->
 <info xmlns:xsi= "http://www.w3.org/2001/XMLSchema-instance"
-      xsi:noNamespaceSchemaLocation="https://apps.nextcloud.com/schema/apps/info.xsd">
-    <id>data_request</id>
-    <name>Data Request</name>
-    <summary>Request your data from the admins</summary>
-    <description><![CDATA[Enable your users to request an export or deletion of their data. According options are added to the personal settings section. Administrators will be notified by email about the request.]]></description>
-    <version>4.0.0-dev.0</version>
-    <licence>agpl</licence>
-    <author mail="blizzz@arthur-schiwon.de" homepage="https://nextcloud.com">Arthur Schiwon</author>
-    <namespace>DataRequest</namespace>
-    <category>tools</category>
-    <website>https://github.com/nextcloud/data_request</website>
-    <bugs>https://github.com/nextcloud/data_request/issues</bugs>
-    <repository type="git">https://github.com/nextcloud/data_request.git</repository>
-    <screenshot>https://raw.githubusercontent.com/nextcloud/data_request/master/screenshots/personal-settings.png</screenshot>
-    <screenshot>https://raw.githubusercontent.com/nextcloud/data_request/master/screenshots/settings-close-up.png</screenshot>
-    <dependencies>
-        <nextcloud min-version="32" max-version="32" />
-    </dependencies>
+	xsi:noNamespaceSchemaLocation="https://apps.nextcloud.com/schema/apps/info.xsd">
+	<id>data_request</id>
+	<name>Data Request</name>
+	<summary>Request your data from the admins</summary>
+	<description><![CDATA[Enable your users to request an export or deletion of their data. According options are added to the personal settings section. Administrators will be notified by email about the request.]]></description>
+	<version>4.0.0</version>
+	<licence>agpl</licence>
+	<author mail="blizzz@arthur-schiwon.de" homepage="https://nextcloud.com">Arthur Schiwon</author>
+	<namespace>DataRequest</namespace>
+	<category>tools</category>
+	<website>https://github.com/nextcloud/data_request</website>
+	<bugs>https://github.com/nextcloud/data_request/issues</bugs>
+	<repository type="git">https://github.com/nextcloud/data_request.git</repository>
+	<screenshot>https://raw.githubusercontent.com/nextcloud/data_request/master/screenshots/personal-settings.png</screenshot>
+	<screenshot>https://raw.githubusercontent.com/nextcloud/data_request/master/screenshots/settings-close-up.png</screenshot>
+	<dependencies>
+		<nextcloud min-version="32" max-version="32" />
+	</dependencies>
 
-    <settings>
-        <personal>OCA\DataRequest\Settings\Personal</personal>
-    </settings>
+	<settings>
+		<personal>OCA\DataRequest\Settings\Personal</personal>
+	</settings>
 </info>
