@@ -1,4 +1,6 @@
 { "translations": {
-    "Hello %s," : "ສະບາຍດີ 1%s ,"
+    "Hello %s," : "ສະບາຍດີ 1%s ,",
+    "Account" : "Account",
+    "Request account deletion" : "Request account deletion"
 },"pluralForm" :"nplurals=1; plural=0;"
 }
