@@ -9,7 +9,7 @@
 	<name>Data Request</name>
 	<summary>Request your data from the admins</summary>
 	<description><![CDATA[Enable your users to request an export or deletion of their data. According options are added to the personal settings section. Administrators will be notified by email about the request.]]></description>
-	<version>5.0.0-dev.0</version>
+	<version>6.0.0-dev.0</version>
 	<licence>agpl</licence>
 	<author mail="blizzz@arthur-schiwon.de" homepage="https://nextcloud.com">Arthur Schiwon</author>
 	<namespace>DataRequest</namespace>
@@ -20,7 +20,7 @@
 	<screenshot>https://raw.githubusercontent.com/nextcloud/data_request/master/screenshots/personal-settings.png</screenshot>
 	<screenshot>https://raw.githubusercontent.com/nextcloud/data_request/master/screenshots/settings-close-up.png</screenshot>
 	<dependencies>
-		<nextcloud min-version="33" max-version="33" />
+		<nextcloud min-version="34" max-version="34" />
 	</dependencies>
 
 	<settings>
