@@ -47,13 +47,19 @@
 					$context.removeClass('loading');
 				},
 				error: function (response) {
-					$context.prop('disabled', '');
-					$context.removeClass('loading');
-					if(response.responseJSON && response.responseJSON.ocs.data.error) {
-						$context.siblings('span.warning')
-							.removeClass('hidden')
-							.html(response.responseJSON.ocs.data.error);
+					if (response.status !== 429) {
+						$context.prop('disabled', '');
 					}
+
+					$context.removeClass('loading');
+
+					const errorMessage = response.status === 429
+						? t('data_request', 'Already requested, please try again later.')
+						: (response.responseJSON?.ocs?.data?.error || t('data_request', 'Request failed'));
+
+					$context.siblings('span.warning')
+						.removeClass('hidden')
+						.html(errorMessage);
 				}
 			});
 		}
