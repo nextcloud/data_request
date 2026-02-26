@@ -2,6 +2,7 @@ OC.L10N.register(
     "data_request",
     {
     "sent!" : "imetumwa!",
+    "Request failed" : "Ombi limeshindikana",
     "No administrator could have been contacted." : "Hakuna msimamizi ambaye angeweza kuwasiliana",
     "Personal data export request" : "Ombi la data binafsi limeagizwa",
     "Hello %s," : "Hello %s,",

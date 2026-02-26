@@ -2,6 +2,7 @@ OC.L10N.register(
     "data_request",
     {
     "sent!" : "送信しました！",
+    "Request failed" : "リクエストに失敗しました",
     "No administrator could have been contacted." : "管理者に連絡が取れなかった可能性があります。",
     "Personal data export request" : "個人データのエクスポート要求",
     "Hello %s," : "こんにちは %s さん、",

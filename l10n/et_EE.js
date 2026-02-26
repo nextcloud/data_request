@@ -1,6 +1,7 @@
 OC.L10N.register(
     "data_request",
     {
+    "Request failed" : "Päring ei õnnestunud",
     "Hello %s," : "Tere %s,",
     "Account" : "Konto",
     "Request account deletion" : "Palu kasutajakonto kustutamist"

@@ -1,4 +1,5 @@
 { "translations": {
+    "Request failed" : "So‘rov bajarilmadi",
     "Hello %s," : "Xush kelibsiz %s,",
     "Account" : "Akkaunt"
 },"pluralForm" :"nplurals=1; plural=0;"

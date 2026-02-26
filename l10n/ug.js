@@ -2,6 +2,7 @@ OC.L10N.register(
     "data_request",
     {
     "sent!" : "ئەۋەتىلدى!",
+    "Request failed" : "تەلەپ مەغلۇپ بولدى",
     "No administrator could have been contacted." : "ھېچقانداق باشقۇرغۇچى بىلەن ئالاقىلاشقىلى بولمايتتى.",
     "Personal data export request" : "شەخسىي سانلىق مەلۇمات ئېكسپورت تەلىپى",
     "Hello %s," : "ياخشىمۇسىز%s,",
