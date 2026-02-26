@@ -2,6 +2,7 @@ OC.L10N.register(
     "data_request",
     {
     "sent!" : "seolta!",
+    "Request failed" : "Theip ar an iarratas",
     "No administrator could have been contacted." : "Níorbh fhéidir teagmháil a dhéanamh le riarthóir ar bith.",
     "Personal data export request" : "Iarratas easpórtála sonraí pearsanta",
     "Hello %s," : "Dia duit %s,",

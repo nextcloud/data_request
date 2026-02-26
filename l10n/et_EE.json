@@ -1,4 +1,5 @@
 { "translations": {
+    "Request failed" : "Päring ei õnnestunud",
     "Hello %s," : "Tere %s,",
     "Account" : "Konto",
     "Request account deletion" : "Palu kasutajakonto kustutamist"

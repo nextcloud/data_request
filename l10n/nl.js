@@ -2,6 +2,7 @@ OC.L10N.register(
     "data_request",
     {
     "sent!" : "verstuurd!",
+    "Request failed" : "Aanvraag mislukt",
     "No administrator could have been contacted." : "Er kon geen administrator worden gecontacteerd.",
     "Personal data export request" : "Persoonlijke gegevens export verzoek",
     "Hello %s," : "Hallo %s,",

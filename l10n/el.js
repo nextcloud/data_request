@@ -2,6 +2,7 @@ OC.L10N.register(
     "data_request",
     {
     "sent!" : "απεστάλη!",
+    "Request failed" : "Το αίτημα απέτυχε",
     "No administrator could have been contacted." : "Δεν ήταν δυνατή η επικοινωνία με κάποιον διαχειριστή.",
     "Personal data export request" : "Αίτημα εξαγωγής προσωπικών δεδομένων",
     "Hello %s," : "Γεια σου %s,",
