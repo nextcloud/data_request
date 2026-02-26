@@ -1,5 +1,6 @@
 { "translations": {
     "sent!" : "보냈습니다!",
+    "Request failed" : "요청 실패",
     "No administrator could have been contacted." : "연락할 수 있는 관리자가 없습니다.",
     "Personal data export request" : "개인 데이터 내보내기 요청",
     "Hello %s," : "안녕하세요 %s 님,",

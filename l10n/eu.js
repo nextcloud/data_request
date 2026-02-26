@@ -2,6 +2,7 @@ OC.L10N.register(
     "data_request",
     {
     "sent!" : "bidalita!",
+    "Request failed" : "Eskaerak huts egin du",
     "No administrator could have been contacted." : "Ezin izan da administratzailerik kontaktatu.",
     "Personal data export request" : "Datu pertsonalak esportatzeko eskaera",
     "Hello %s," : "Kaixo %s,",

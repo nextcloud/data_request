@@ -2,6 +2,7 @@ OC.L10N.register(
     "data_request",
     {
     "sent!" : "imbiadu!",
+    "Request failed" : "Rechesta faddida",
     "No administrator could have been contacted." : "No at fatu a cuntatare s'amministratzione.",
     "Personal data export request" : "Rechesta de esportare datos personales",
     "Hello %s," : "Salude %s,",

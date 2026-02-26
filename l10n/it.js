@@ -2,6 +2,7 @@ OC.L10N.register(
     "data_request",
     {
     "sent!" : "inviato!",
+    "Request failed" : "Richiesta non riuscita",
     "No administrator could have been contacted." : "Non è stato possibile contattare un amministratore",
     "Personal data export request" : "Richiesta di esportazione dati personali",
     "Hello %s," : "Ciao %s,",

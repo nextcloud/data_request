@@ -2,6 +2,7 @@ OC.L10N.register(
     "data_request",
     {
     "sent!" : "poslano!",
+    "Request failed" : "Zahteva je spodletela",
     "No administrator could have been contacted." : "Stika s skrbnikom ni bilo mogoče vzpostaviti.",
     "Personal data export request" : "Zahteva za izvoz osebnih podatkov",
     "Hello %s," : "Pozdravljeni, %s,",
