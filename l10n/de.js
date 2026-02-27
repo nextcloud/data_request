@@ -2,7 +2,8 @@ OC.L10N.register(
     "data_request",
     {
     "sent!" : "Gesendet!",
-    "Request failed" : "Benötigt keine Übersetzung. Hier wird nur die formelle Übersetzung verwendet (de_DE).",
+    "Already requested, please try again later." : "Bereits angefordert, bitte später noch einmal versuchen.",
+    "Request failed" : "Anforderung fehlgeschlagen",
     "No administrator could have been contacted." : "Die Administration konnte nicht kontaktiert werden.",
     "Personal data export request" : "Anforderung zum Export persönlicher Daten",
     "Hello %s," : "Hallo, %s,",

@@ -2,7 +2,8 @@ OC.L10N.register(
     "data_request",
     {
     "sent!" : "gönderildi!",
-    "Request failed" : "İstek karşılanamadı",
+    "Already requested, please try again later." : "İstek zaten yapılmış. Lütfen bir süre sonra yeniden deneyin.",
+    "Request failed" : "İstek yapılamadı",
     "No administrator could have been contacted." : "Hiçbir yönetici ile iletişim kurulamadı.",
     "Personal data export request" : "Kişisel verileri dışa aktarma isteği",
     "Hello %s," : "Merhaba %s,",
