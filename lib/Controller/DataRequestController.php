@@ -10,6 +10,7 @@ namespace OCA\DataRequest\Controller;
 use OCA\DataRequest\Exceptions\HintedRuntime;
 use OCA\DataRequest\Services\Request;
 use OCP\AppFramework\Http;
+use OCP\AppFramework\Http\Attribute\UserRateLimit;
 use OCP\AppFramework\Http\DataResponse;
 use OCP\AppFramework\OCSController;
 use OCP\IRequest;
@@ -33,6 +34,7 @@ class DataRequestController extends OCSController {
 	 * @NoAdminRequired
 	 * @PasswordConfirmationRequired
 	 */
+	#[UserRateLimit(limit: 1, period: 3600)]
 	public function export(): DataResponse {
 		return $this->processRequest(function (): void {
 			$this->dataRequest->sendExportRequest();
@@ -43,6 +45,7 @@ class DataRequestController extends OCSController {
 	 * @NoAdminRequired
 	 * @PasswordConfirmationRequired
 	 */
+	#[UserRateLimit(limit: 1, period: 3600)]
 	public function deletion(): DataResponse {
 		return $this->processRequest(function (): void {
 			$this->dataRequest->sendDeleteRequest();
