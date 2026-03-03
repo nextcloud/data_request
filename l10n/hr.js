@@ -2,6 +2,7 @@ OC.L10N.register(
     "data_request",
     {
     "sent!" : "poslana!",
+    "Already requested, please try again later." : "Zahtjev je već poslan, pokušajte ponovno kasnije.",
     "Request failed" : "Zahtjev nije uspio",
     "No administrator could have been contacted." : "Nije stupljeno u kontakt ni s jednim administratorom.",
     "Personal data export request" : "Zahtjev za izvoz osobnih podataka",
