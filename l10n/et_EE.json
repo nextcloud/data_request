@@ -1,7 +1,7 @@
 { "translations": {
     "Request failed" : "Päring ei õnnestunud",
     "Hello %s," : "Tere %s,",
-    "Account" : "Konto",
+    "Account" : "Kasutajakonto",
     "Request account deletion" : "Palu kasutajakonto kustutamist"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }
