@@ -3,7 +3,7 @@ OC.L10N.register(
     {
     "Request failed" : "Päring ei õnnestunud",
     "Hello %s," : "Tere %s,",
-    "Account" : "Konto",
+    "Account" : "Kasutajakonto",
     "Request account deletion" : "Palu kasutajakonto kustutamist"
 },
 "nplurals=2; plural=(n != 1);");
