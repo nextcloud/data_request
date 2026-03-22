@@ -2,6 +2,7 @@ OC.L10N.register(
     "data_request",
     {
     "sent!" : "odesláno",
+    "Already requested, please try again later." : "Už zažádáno – zkuste to později znovu.",
     "Request failed" : "Požadavek se nezdařil",
     "No administrator could have been contacted." : "Nepodařilo se kontaktovat žádného ze správců.",
     "Personal data export request" : "Požadavek na export osobních dat",
