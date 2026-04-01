@@ -2,6 +2,7 @@ OC.L10N.register(
     "data_request",
     {
     "sent!" : "elküldve!",
+    "Already requested, please try again later." : "Már kérte, próbálja újra később.",
     "Request failed" : "Sikertelen kérés",
     "No administrator could have been contacted." : "Nem sikerült kapcsolatba lépni egy adminisztrátorral sem.",
     "Personal data export request" : "Személyes adatok exportálásának kérése",
