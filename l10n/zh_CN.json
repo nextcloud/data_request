@@ -1,5 +1,6 @@
 { "translations": {
     "sent!" : "发送！",
+    "Already requested, please try again later." : "已提出请求，请稍后再试。",
     "Request failed" : "请求失败",
     "No administrator could have been contacted." : "没有可联系的管理员。",
     "Personal data export request" : "个人数据导出请求",
