@@ -6,7 +6,7 @@ OC.L10N.register(
     "Request failed" : "Anforderung fehlgeschlagen",
     "No administrator could have been contacted." : "Die Administration konnte nicht kontaktiert werden.",
     "Personal data export request" : "Anforderung zum Export persönlicher Daten",
-    "Hello %s," : "Hallo, %s,",
+    "Hello %s," : "Hallo %s,",
     "The user %s, identified by user id \"%s\", has requested an export of their personal data. Please take action accordingly." : "Der Benutzer %s, identifiziert durch die Benutzer-ID \"%s\", hat einen Export seiner persönlichen Daten angefordert. Bitte handeln Sie entsprechend.",
     "Account deletion request" : "Anforderung zur Kontolöschung",
     "The user %s, identified by user id \"%s\", has requested to delete their account. Please take action accordingly." : "Der Benutzer %s, identifiziert durch die Benutzer-ID \"%s\", hat eine Löschung seines Kontos angefordert. Bitte handeln Sie entsprechend.",
