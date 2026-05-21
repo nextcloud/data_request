@@ -3,65 +3,63 @@
  * SPDX-License-Identifier: AGPL-3.0-or-later
  */
 
-'use strict';
-
 /** global: OCA */
 /** global: OC */
 
 (function(OC, OCA) {
-	OCA.DataRequest = OCA.DataRequest || {};
+	'use strict'
+
+	OCA.DataRequest = OCA.DataRequest || {}
 
 	OCA.DataRequest.App = {
-		init: function() {
-			$('#data-request button').on('click', function() {
-				OCA.DataRequest.App.request($(this));
-			});
+		init() {
+			document.querySelectorAll('#data-request button').forEach((btn) => {
+				btn.addEventListener('click', () => this.request(btn))
+			})
 		},
 
-		request: function ($context) {
-			if(OC.PasswordConfirmation.requiresPasswordConfirmation()) {
-				var self = this;
-				OC.PasswordConfirmation.requirePasswordConfirmation(function () {
-					self._doRequest($context);
-				});
-				return;
+		request(btn) {
+			if (OC.PasswordConfirmation.requiresPasswordConfirmation()) {
+				OC.PasswordConfirmation.requirePasswordConfirmation(() => this._doRequest(btn))
+				return
 			}
-			this._doRequest($context);
+			this._doRequest(btn)
 		},
 
-		_doRequest($context) {
-			$context.prop('disabled', 'disabled');
-			$context.addClass('loading');
-			$context.siblings('span.warning').addClass('hidden').html('');
+		async _doRequest(btn) {
+			btn.disabled = true
+			btn.classList.add('loading')
 
-			$.ajax({
-				type: 'POST',
-				url: OC.linkToOCS('apps/data_request/api/v1', 2) + $context.data('request'),
-				dataType: 'json',
-				beforeSend: function (request) {
-					request.setRequestHeader('Accept', 'application/json');
-				},
+			try {
+				const response = await fetch(OC.linkToOCS('apps/data_request/api/v1', 2) + btn.dataset.request, {
+					method: 'POST',
+					headers: {
+						'Accept': 'application/json',
+						'requesttoken': OC.requestToken,
+					},
+				})
 
-				success: function () {
-					$context.html($context.html() + ' ' + t('data_request', 'sent!'));
-					$context.removeClass('loading');
-				},
-				error: function (response) {
-					if (response.status !== 429) {
-						$context.prop('disabled', '');
-					}
-
-					$context.removeClass('loading');
-
-					const errorMessage = response.status === 429
-						? t('data_request', 'Already requested, please try again later.')
-						: (response.responseJSON?.ocs?.data?.error || t('data_request', 'Request failed'));
-
-					$context.siblings('span.warning')
-						.removeClass('hidden')
-						.html(errorMessage);
+				if (!response.ok) {
+					const data = await response.json().catch(() => null)
+					throw { status: response.status, data }
 				}
-			});
-		}
-	};
-})(OC, OCA);
+
+				btn.append(' ' + t('data_request', 'sent!'))
+			} catch (err) {
+				const { status, data } = err
+				const warning = btn.parentElement.querySelector('span.warning')
+
+				btn.disabled = status === 429
+
+				if (warning) {
+					warning.classList.remove('hidden')
+					warning.textContent = status === 429
+						? t('data_request', 'Already requested, please try again later.')
+						: (data?.ocs?.data?.error || t('data_request', 'Request failed'))
+				}
+			} finally {
+				btn.classList.remove('loading')
+			}
+		},
+	}
+})(OC, OCA)
