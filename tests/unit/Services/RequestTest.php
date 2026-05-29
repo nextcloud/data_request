@@ -142,7 +142,6 @@ class RequestTest extends \Test\TestCase {
 		$this->assertSame($template, $result);
 	}
 
-
 	public function adminProvider() {
 		$admin1 = $this->createMock(IUser::class);
 
