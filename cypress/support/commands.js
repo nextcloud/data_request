@@ -7,7 +7,7 @@ import { addGetter } from './addGetter.js'
 
 addCommands()
 
-addGetter('appContent', '#app-content')
+addGetter('appContent', '#app-content-vue')
 addGetter('getButton', action => `#data-request-${action}`)
 addGetter('getWarning', action => `#data-request-${action} ~ .warning`)
 
