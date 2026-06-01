@@ -118,6 +118,7 @@ jobs:
       - name: Run ${{ matrix.containers == 'component' && 'component' || 'E2E' }} cypress tests
         uses: cypress-io/github-action@dace029018fcdf86e0df89a31bc3cfa5b32570d8 # v7.3.0
         with:
+          browser: chrome
           record: ${{ secrets.CYPRESS_RECORD_KEY && true }}
           parallel: ${{ secrets.CYPRESS_RECORD_KEY && true }}
           # cypress run type
@@ -143,7 +144,7 @@ jobs:
         if: always()
         with:
           name: snapshots_${{ matrix.containers }}
-          path: cypress/snapshots
+          path: cypress/screenshots
 
       - name: Extract NC logs
         if: failure() && matrix.containers != 'component'
