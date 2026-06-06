@@ -2,6 +2,7 @@ OC.L10N.register(
     "data_request",
     {
     "sent!" : "ارسال شد!",
+    "Already requested, please try again later." : "قبلاً درخواست شده است؛ لطفاً بعداً دوباره تلاش کنید.",
     "Request failed" : "درخواست شکست خورد",
     "No administrator could have been contacted." : "با هیچ مدیری نمی‌توان تماس گرفت.",
     "Personal data export request" : "درخواست صادرات داده های شخصی",
