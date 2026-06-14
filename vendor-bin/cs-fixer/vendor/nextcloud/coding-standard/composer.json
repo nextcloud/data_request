@@ -1,0 +1,30 @@
+{
+    "name": "nextcloud/coding-standard",
+    "description": "Nextcloud coding standards for the php cs fixer",
+    "type": "library",
+    "keywords": [
+        "dev"
+    ],
+    "require": {
+        "php": "^8.0",
+        "php-cs-fixer/shim": "^3.17",
+        "kubawerlos/php-cs-fixer-custom-fixers": "^3.22"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Christoph Wurst",
+            "email": "christoph@winzerhof-wurst.at"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Nextcloud\\CodingStandard\\": "src"
+        }
+    },
+    "scripts": {
+        "cs:check": "php-cs-fixer fix --dry-run --diff",
+        "cs:fix": "php-cs-fixer fix",
+        "lint": "find . -name \\*.php -not -path './vendor/*' -print0 | xargs -0 -n1 php -l"
+    }
+}
