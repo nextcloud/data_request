@@ -1,6 +1,7 @@
 OC.L10N.register(
     "data_request",
     {
+    "sent!" : "saadetud!",
     "Request failed" : "Päring ei õnnestunud",
     "Hello %s," : "Tere %s,",
     "Account" : "Kasutajakonto",
