@@ -1,4 +1,5 @@
 { "translations": {
+    "sent!" : "saadetud!",
     "Request failed" : "Päring ei õnnestunud",
     "Hello %s," : "Tere %s,",
     "Account" : "Kasutajakonto",
