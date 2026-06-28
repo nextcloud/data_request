@@ -4,6 +4,7 @@
     "Personal data export request" : "Pedido de exportação de dados pessoais",
     "Hello %s," : "Olá %s,",
     "Account deletion request" : "Pedido de eliminação de conta",
+    "The user %s, identified by user id \"%s\", has requested to delete their account. Please take action accordingly." : "O usuário %s, identificado pelo ID \"%s\", solicitou exclusão de sua conta. Por favor, tome as providências necessárias.",
     "No administrator has set an email address" : "Nenhum administrador definiu um endereço de e-mail",
     "Data Request" : "Pedido de Dados",
     "Request your data from the admins" : "Solicite os seus dados via administradores",
