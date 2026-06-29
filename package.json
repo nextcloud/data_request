@@ -30,7 +30,7 @@
   "homepage": "https://github.com/nextcloud/data_request#readme",
   "devDependencies": {
     "@nextcloud/cypress": "^1.0.0-beta.15",
-    "cypress": "^13.6.2"
+    "cypress": "^15.18.0"
   },
   "engines": {
     "node": "^24.0.0",
