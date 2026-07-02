@@ -1,9 +1,11 @@
 { "translations": {
     "sent!" : "enviados!",
     "Already requested, please try again later." : "Já solicitado, tente novamente mais tarde.",
+    "Request failed" : "A solicitação falhou",
     "No administrator could have been contacted." : "Nenhum administrador poderia ter sido contactado.",
     "Personal data export request" : "Pedido de exportação de dados pessoais",
     "Hello %s," : "Olá %s,",
+    "The user %s, identified by user id \"%s\", has requested an export of their personal data. Please take action accordingly." : "O usuário %s, identificado pelo ID \"%s\", solicitou a exportação de seus dados pessoais. Por favor, tome as providências necessárias.",
     "Account deletion request" : "Pedido de eliminação de conta",
     "The user %s, identified by user id \"%s\", has requested to delete their account. Please take action accordingly." : "O usuário %s, identificado pelo ID \"%s\", solicitou exclusão de sua conta. Por favor, tome as providências necessárias.",
     "No administrator has set an email address" : "Nenhum administrador definiu um endereço de e-mail",
