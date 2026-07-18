@@ -3,7 +3,13 @@ OC.L10N.register(
     {
     "sent!" : "saadetud!",
     "Request failed" : "Päring ei õnnestunud",
+    "No administrator could have been contacted." : "Mitte ühegi peakasutajaga polnud võimalik ühendust võtta.",
+    "Personal data export request" : "Isiklike andmete ekspordipäring",
     "Hello %s," : "Tere %s,",
+    "The user %s, identified by user id \"%s\", has requested an export of their personal data. Please take action accordingly." : "„%s“ kasutaja, kelle kasutajatunnus on „%s“ on soovinud oma isiklike andmete eksportimist. Palun toimi vastavalt.",
+    "Account deletion request" : "Kasutajakonto kustutamissoov",
+    "The user %s, identified by user id \"%s\", has requested to delete their account. Please take action accordingly." : "„%s“ kasutaja, kelle kasutajatunnus on „%s“ on soovinud oma kasutajakonto kustutamist. Palun toimi vastavalt.",
+    "No administrator has set an email address" : "Mitte ükski peakasutaja pole seadistanud e-posti aadressi",
     "Account" : "Kasutajakonto",
     "Request account deletion" : "Palu kasutajakonto kustutamist"
 },
