@@ -1,0 +1,56 @@
+<?php return array(
+    'root' => array(
+        'name' => '__root__',
+        'pretty_version' => 'dev-stable32',
+        'version' => 'dev-stable32',
+        'reference' => '453b61beb8f094c6148deed7e2651b510902b189',
+        'type' => 'library',
+        'install_path' => __DIR__ . '/../../',
+        'aliases' => array(),
+        'dev' => true,
+    ),
+    'versions' => array(
+        '__root__' => array(
+            'pretty_version' => 'dev-stable32',
+            'version' => 'dev-stable32',
+            'reference' => '453b61beb8f094c6148deed7e2651b510902b189',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../../',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'friendsofphp/php-cs-fixer' => array(
+            'dev_requirement' => true,
+            'replaced' => array(
+                0 => 'v3.95.18',
+            ),
+        ),
+        'kubawerlos/php-cs-fixer-custom-fixers' => array(
+            'pretty_version' => 'v3.37.2',
+            'version' => '3.37.2.0',
+            'reference' => '678df979ce743466b42ddb6eea46b3f4c9a7bade',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../kubawerlos/php-cs-fixer-custom-fixers',
+            'aliases' => array(),
+            'dev_requirement' => true,
+        ),
+        'nextcloud/coding-standard' => array(
+            'pretty_version' => 'v1.5.0',
+            'version' => '1.5.0.0',
+            'reference' => '80547a93236fbb9c783e05f0f0899043851b0dba',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../nextcloud/coding-standard',
+            'aliases' => array(),
+            'dev_requirement' => true,
+        ),
+        'php-cs-fixer/shim' => array(
+            'pretty_version' => 'v3.95.18',
+            'version' => '3.95.18.0',
+            'reference' => '9b815f2ba5c581faaaec1386dcda4c16d511e6bb',
+            'type' => 'application',
+            'install_path' => __DIR__ . '/../php-cs-fixer/shim',
+            'aliases' => array(),
+            'dev_requirement' => true,
+        ),
+    ),
+);
