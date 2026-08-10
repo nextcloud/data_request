@@ -7,7 +7,6 @@
 style('data_request', 'style');
 script('data_request', ['init', 'app']);
 
-
 ?>
 
 <div id="data-request" class="section">
