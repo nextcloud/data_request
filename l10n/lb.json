@@ -1,4 +1,5 @@
 { "translations": {
-    "Hello %s," : "Hallo %s,"
+    "Hello %s," : "Hallo %s,",
+    "Account" : "Kont"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }
