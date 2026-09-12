@@ -11,7 +11,7 @@ OC.L10N.register(
     "Account deletion request" : "Begäran om borttagning av konto",
     "The user %s, identified by user id \"%s\", has requested to delete their account. Please take action accordingly." : "Användaren %s, med användar-ID \"%s\", har begärt att kontot tas bort. Vidta lämpliga åtgärder.",
     "No administrator has set an email address" : "Ingen administratör har angett någon e-postadress",
-    "Data Request" : "Databegäranden",
+    "Data Request" : "Databegäran",
     "Request your data from the admins" : "Begär dina uppgifter från administratörerna",
     "Enable your users to request an export or deletion of their data. According options are added to the personal settings section. Administrators will be notified by email about the request." : "Gör det möjligt för användare att begära export eller borttagning av sina uppgifter. Motsvarande alternativ läggs till i de personliga inställningarna. Administratörer aviseras via e-post om begäran.",
     "Account" : "Konto",
