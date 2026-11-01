@@ -3,10 +3,10 @@ OC.L10N.register(
     {
     "sent!" : "sendt!",
     "Already requested, please try again later." : "Der er allerede sendt en anmodning. Prøv igen senere.",
-    "Request failed" : "Anmodning fejlede",
-    "No administrator could have been contacted." : "Der var ingen administrator at kontakte.",
-    "Personal data export request" : "Anmodning om personlig dataeksport",
-    "Hello %s," : "God dag %s,",
+    "Request failed" : "Anmodningen mislykkedes",
+    "No administrator could have been contacted." : "Der kunne ikke kontaktes nogen administrator.",
+    "Personal data export request" : "Anmodning om eksport af personlige data",
+    "Hello %s," : "Hej %s,",
     "The user %s, identified by user id \"%s\", has requested an export of their personal data. Please take action accordingly." : "Brugeren %s med bruger-ID \"%s\" har anmodet om at få en eksport af sine personlige data. Håndter anmodningen.",
     "Account deletion request" : "Anmodning om sletning af konto",
     "The user %s, identified by user id \"%s\", has requested to delete their account. Please take action accordingly." : "Brugeren %s med bruger-ID \"%s\" har anmodet om at få sin konto slettet. Håndter anmodningen.",
@@ -16,7 +16,7 @@ OC.L10N.register(
     "Enable your users to request an export or deletion of their data. According options are added to the personal settings section. Administrators will be notified by email about the request." : "Gør det muligt for dine brugere at anmode om eksport eller sletning af deres data. De tilhørende funktioner tilføjes til sektionen med personlige indstillinger. Administratorer får en e-mail, når der indgives en anmodning.",
     "Account" : "Konto",
     "You can request an export of your data or account deletion from the system administrator. This can take up to 30 days." : "Du kan anmode om at få eksporteret dine data eller slettet din konto fra systemadministratoren. Dette kan tage op til 30 dage.",
-    "Request data export" : "Anmodning om eksport af data",
-    "Request account deletion" : "Anmodning om sletning af konto"
+    "Request data export" : "Anmod om eksport af data",
+    "Request account deletion" : "Anmod om sletning af konto"
 },
 "nplurals=2; plural=(n != 1);");
